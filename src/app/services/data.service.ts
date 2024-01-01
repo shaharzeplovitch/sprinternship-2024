@@ -10,8 +10,6 @@ export class DataService {
   companyUrl = 'http://localhost:3000/companies/';
   jobsUrl = 'http://localhost:3000/jobs/';
   experiencesUrl = 'http://localhost:3000/experiences/';
-  selectedJob: Job | undefined = undefined;
-  selectedCompany: Company | undefined = undefined;
 
   // Returns a JSON list of all companies 
   async getAllCompanies(): Promise<Company[]> {

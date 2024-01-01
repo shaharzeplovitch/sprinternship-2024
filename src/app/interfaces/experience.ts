@@ -5,8 +5,6 @@ export interface Experience {
   companyName: string;
   date: number; 
   location: string;
-  
-
   applicationProcess: string;
   interviewExperience: string; 
   foundHelpfulCount: number;
