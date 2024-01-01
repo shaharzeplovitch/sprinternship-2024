@@ -27,7 +27,7 @@ export class DataService {
     return await data.json() ?? {};
   }
 
-  async getConversationById(convId: number): Promise<Experience> {
+  async getExperienceById(convId: number): Promise<Experience> {
     const data = await fetch(`${this.experiencesUrl}/${convId}`);
     return await data.json() ?? {};
   }
@@ -43,24 +43,14 @@ export class DataService {
     return await data.json() ?? [];
   }
 
-  async getAllConversations(): Promise<Experience[]> {
+  async getAllExperiences(): Promise<Experience[]> {
     const data = await fetch(this.experiencesUrl);
     return await data.json() ?? [];
   }
 
-  async getConversationsByJobId(jobId: number): Promise<Experience[]> {
-    const experiencesUrl = `http://localhost:3000/conversations?jobId=${jobId}`;
+  async getExperiencesByJobId(jobId: number): Promise<Experience[]> {
+    const experiencesUrl = `http://localhost:3000/expereiences?jobId=${jobId}`;
     const data = await fetch(experiencesUrl);
     return await data.json() ?? [];
-  }
-
-  async createConversation(experience: Experience) {
-    const data = await fetch(this.experiencesUrl, {
-      method: 'POST',
-      body: JSON.stringify(experience),
-      headers: { 'Content-Type': 'application/json' }
-    });
-
-    return data.json() ?? {};
   }
 }
