@@ -1,14 +1,30 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { RouterOutlet } from '@angular/router';
+import { HomeComponent } from './home/home.component';
+import { RouterLink, RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  imports: [
+    HomeComponent,
+    RouterLink,
+    RouterOutlet,
+  ],
+  template: `
+    <main>
+      <header class="brand-name">
+        <a>
+          <img class="brand-logo" src="/assets/linkedin.png" alt="logo" aria-hidden="true">
+        </a>
+        <span class="welcome-header">Welcome to Sprinternship 2024</span>
+      </header>
+      <section class="content">
+        <router-outlet></router-outlet>
+      </section>
+    </main>
+  `,
+  styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  title = 'sprinternship-2024';
+  title = 'homes';
 }
