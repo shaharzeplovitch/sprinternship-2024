@@ -1,6 +1,6 @@
-# Sprinternship 2024 Social Jobs Page
+# Sprinternship 2024 LinkedIn Jobs Page
 
-Welcome to Social Sprinternship Jobs Page! The simple page anyone can use to post or read others' interviews and jobs experiences! 
+Welcome to Sprinternship Linkedin Jobs Page! The simple page anyone can use to post or read others' interviews and jobs experiences! 
 
 For the LinkedIn WiT Sprinterns 2024
 
@@ -48,7 +48,7 @@ first opening a command line at this repo location, then running
 npm install
 ```
 
-Once this command finishes, you should see some new things in this repositories folder. You should now see a `package-lock.json` and `node_modules` folder in this current folder. If you don't have these two, something has gone wrong in the installation or you may be looking in the wrong folder, reach out to Greg or your mentor to figure this out.
+Once this command finishes, you should see some new things in this repositories folder. You should now see a `package-lock.json` and `node_modules` folder in this current folder. If you don't have these two, something has gone wrong in the installation or you may be looking in the wrong folder, reach out to Shahar or your mentor to figure this out.
 
 ## Setting up JSON Server -- Get a full fake REST API with zero coding in less than 30 seconds (seriously)
 JSON Server is a third party library that provides a full fake REST API (backend server API) with no database or API setup. 
@@ -92,7 +92,7 @@ You should see
 Watch mode enabled. Watching for file changes...
   ➜  Local:   http://localhost:4200/`
 
-in your command line and a window should open in your default browser with a title that says `Welcome to Sprinternship 2024!`. If you see this, congrats, the project is running! Time to get to work 👷‍♀️🛠
+in your command line and a window should open in your default browser with a LinkedIn logo on the top right corner. If you see this, congrats, the project is running! Time to get to work 👷‍♀️🛠
 
 
 # Appendix
@@ -105,7 +105,7 @@ tl;dr: \*All code is built on top of other code. Package A requires something fr
 
 - `package.json` - This is your main entrypoint in a Javascript based project. This will tell you helpful information like what this repository is called, the author, the current version, what kind of commands this package supports under the `scripts` section, and its top level dependencies. "Top level dependencies" are the packages that this repo _directly_ requires. It _does not_ represent every package that will be needed to run this project
 
-- `package-lock.json` - If you notice in the `dependencies` section of our `package.json`, there's weird characters next to the version number of some of our dependencies. For example: `"parcel-bundler": "^1.6.1"`. These characters are important! For example, the carat `^` symbol means "at least". So when we run `npm install`, we're saying that we want _at least_ parcel-bundler version 1.6.1, but if there's a newer version, we'll take that too! The idea behind this is that (leaving out some specifics about this process, called [Semantic Versioning](https://docs.npmjs.com/about-semantic-versioning)), consumers of a package would generally want the newer version of the code whenever it's available, and we don't want to have to constantly go back to our package.json to update its version numbers. So now you may be asking, well what version do we actually have installed right now? This is where the package-lock.json comes in. It records the _actual_ dependencies and their exact versions that are installed when you hit `npm install`. In the package lock, you'll also see more of the dependency chain for your project, as other top level dependencies are listed in this file
+- `package-lock.json` - If you notice in the `dependencies` section of our `package.json`, there's weird characters next to the version number of some of our dependencies. For example: `"@angular/animations": "^17.0.0"`. These characters are important! For example, the carat `^` symbol means "at least". So when we run `npm install`, we're saying that we want _at least_ @angular/animations version 17.0.0, but if there's a newer version, we'll take that too! The idea behind this is that (leaving out some specifics about this process, called [Semantic Versioning](https://docs.npmjs.com/about-semantic-versioning)), consumers of a package would generally want the newer version of the code whenever it's available, and we don't want to have to constantly go back to our package.json to update its version numbers. So now you may be asking, well what version do we actually have installed right now? This is where the package-lock.json comes in. It records the _actual_ dependencies and their exact versions that are installed when you hit `npm install`. In the package lock, you'll also see more of the dependency chain for your project, as other top level dependencies are listed in this file
 
 - `node_modules` - You'll notice that this folder doesn't actually exist in the repository on github, and it only appears when you do an `npm install`. That is because this folder holds the actual code of your _dependencies_. Every folder within the `node_modules` represents a dependency of your project. You can see each of the names of these dependencies is specified in your `package-lock.json`. We choose to include the `package-lock.json` instead of the `node_modules` in our Github repo because it's more efficient to just specify the versions to be installed, instead of all the code related to the dependencies themselves.
 
