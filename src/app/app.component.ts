@@ -18,6 +18,7 @@ import { RouterLink, RouterOutlet } from '@angular/router';
         </a>
       </header>
       <section class="content">
+        <h3>Hello there!</h3>
         <!-- <router-outlet></router-outlet> -->
       </section>
     </main>
