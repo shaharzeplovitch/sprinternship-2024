@@ -16,10 +16,9 @@ import { RouterLink, RouterOutlet } from '@angular/router';
         <a>
           <img class="brand-logo" src="/assets/linkedin.png" alt="logo" aria-hidden="true">
         </a>
-        <span class="welcome-header">Welcome to Sprinternship 2024</span>
       </header>
       <section class="content">
-        <router-outlet></router-outlet>
+        <!-- <router-outlet></router-outlet> -->
       </section>
     </main>
   `,
