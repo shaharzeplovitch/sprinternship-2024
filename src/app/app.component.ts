@@ -19,6 +19,7 @@ import { RouterLink, RouterOutlet } from '@angular/router';
       </header>
       <section class="content">
         <h3>Hello there!</h3>
+        <h2>Hello World!</h2>
         <!-- <router-outlet></router-outlet> -->
       </section>
     </main>
