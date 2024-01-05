@@ -9,7 +9,7 @@ For the LinkedIn WiT Sprinterns 2024
 To get started with this repository, first you need to clone it, you can do that with
 
 ```shell
-git clone <GIT_REPO_LOCATION>
+git clone https://github.com/shaharzeplovitch/sprinternship-2024.git
 ```
 
 The GIT_REPO_LOCATION can be found with the "Code" dropdown on this page in Github
