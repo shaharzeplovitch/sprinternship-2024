@@ -22,6 +22,8 @@ import { RouterLink, RouterOutlet } from '@angular/router';
         <h2>Hello World!</h2>
         <h3>Hello my name is</h3>
         
+        <h3> Hello, my name is Akari </h3>
+        <h3> test </h3>
         <!-- <router-outlet></router-outlet> -->
       </section>
     </main>
