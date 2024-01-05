@@ -55,7 +55,7 @@ JSON Server is a third party library that provides a full fake REST API (backend
 
 You can install it by running the below command in the same terminal window
 ```shell
-npm i json-server ts-node --save-dev
+npm install -g json-server
 ```
 
 In order for this to work, we will need to open up a new terminal and run our JSON Server while running our app. 
