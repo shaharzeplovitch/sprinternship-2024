@@ -11,14 +11,7 @@ import { Company } from '../interfaces/company';
     CommonModule,
     CompanyComponent
   ],
-  template: `
-    <section>
-      <app-company
-        *ngFor="let company of companiesList"
-        [company]="company">
-      </app-company>
-    </section>
-  `,
+  templateUrl: './home.component.html',
   styleUrls: ['./home.component.css'],
 })
 

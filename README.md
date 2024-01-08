@@ -9,7 +9,7 @@ For the LinkedIn WiT Sprinterns 2024
 To get started with this repository, first you need to clone it, you can do that with
 
 ```shell
-git clone <GIT_REPO_LOCATION>
+git clone https://github.com/shaharzeplovitch/sprinternship-2024.git
 ```
 
 The GIT_REPO_LOCATION can be found with the "Code" dropdown on this page in Github
@@ -55,7 +55,7 @@ JSON Server is a third party library that provides a full fake REST API (backend
 
 You can install it by running the below command in the same terminal window
 ```shell
-npm i json-server ts-node --save-dev
+npm install -g json-server
 ```
 
 In order for this to work, we will need to open up a new terminal and run our JSON Server while running our app. 
