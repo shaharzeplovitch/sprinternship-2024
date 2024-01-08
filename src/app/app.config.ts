@@ -6,3 +6,4 @@ import  routeConfig  from './app.routes';
 export const appConfig: ApplicationConfig = {
   providers: [provideRouter(routeConfig)]
 };
+    

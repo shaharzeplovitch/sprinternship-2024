@@ -1,6 +1,7 @@
 export interface Company {
   id: number;
   logoImageUrl: string;
+  backgroundImageUrl: string;
   name: string;
   rating: number;
   companySize: number;
@@ -8,5 +9,6 @@ export interface Company {
   industry: string;
   description: string;
   competitors: string;
-  founded: string; // Year company was founded
+  founded: string;
+  isBookmarked: boolean;
 }
