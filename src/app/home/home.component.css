@@ -18,3 +18,43 @@ button {
 * {
   box-sizing: border-box;
 }
+
+.container {
+  padding: 40px;
+  width: 800px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  border: 1px solid rgba(204, 204, 204, 0.80);
+  background: #FFF;
+  color: #CCCCCCCC;
+}
+
+.heading {
+  width: 203px;
+  height: 26px;
+  flex-shrink: 0;
+  color: #000;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.subtitle {
+  width: 305px;
+  height: 19px;
+  flex-shrink: 0;
+  color: #000;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.bookmark {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}

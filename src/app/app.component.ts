@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { HomeComponent } from './home/home.component';
 import { RouterLink, RouterOutlet } from '@angular/router';
+import { FormsModule } from '@angular/forms'; 
 
 @Component({
   selector: 'app-root',
@@ -9,6 +10,7 @@ import { RouterLink, RouterOutlet } from '@angular/router';
     HomeComponent,
     RouterLink,
     RouterOutlet,
+    FormsModule,
   ],
   template: `
     <main>
@@ -18,8 +20,7 @@ import { RouterLink, RouterOutlet } from '@angular/router';
         </a>
       </header>
       <section class="content">
-        <h3>Hello, my name is Aleena!</h3>
-        <!-- <router-outlet></router-outlet> -->
+        <router-outlet></router-outlet>
       </section>
     </main>
   `,
