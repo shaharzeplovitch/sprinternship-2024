@@ -8,7 +8,7 @@ import { RouterLink, RouterOutlet } from '@angular/router';
   imports: [
     HomeComponent,
     RouterLink,
-    RouterOutlet,
+    RouterOutlet
   ],
   template: `
     <main>
