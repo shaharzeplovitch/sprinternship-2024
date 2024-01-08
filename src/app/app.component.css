@@ -22,3 +22,10 @@ header {
   font-size: xx-large;
   color: blue;
 }
+.navbar {
+  display: flex;
+}
+
+.nav-img {
+  margin: auto;
+}

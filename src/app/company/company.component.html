@@ -1,10 +1,11 @@
 <section class="company-card">
+  <img src="./assets/Bookmark.png" class="bookmark-icon">
   <img class="company-photo" [src]="company.logoImageUrl" alt="Exterior photo of {{company.name}}">
   <h2 class="company-heading">{{ company.name }}</h2>
   <p class="company-location">{{ company.headquarters}}</p>
-  <p class="company-rating">Rating: {{ company.rating}}</p>
-  <p class="company-companySize">Company Size: {{ company.companySize}}</p>
-  <p class="company-industry">Industry: {{ company.industry}}</p>
+  <p class="company-rating"><b>Rating: </b>{{ company.rating}}</p>
+  <p class="company-companySize"><b>Company Size: </b>{{ company.companySize}}</p>
+  <p class="company-industry"><b>Industry: </b>{{ company.industry}}</p>
   <br>
-  <p class="company-text">Description: {{ company.description}}</p>
+  <p class="company-text"><b>Description: </b>{{ company.description}}</p>
 </section>

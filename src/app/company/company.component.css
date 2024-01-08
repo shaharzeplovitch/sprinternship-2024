@@ -36,3 +36,14 @@
 .company-location::before {
   content: url("/assets/location-pin.svg") / "";
 }
+.bookmark-icon {
+  cursor: pointer;
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  left: 740px;
+}
+.bookmark-icon:hover {
+  
+}

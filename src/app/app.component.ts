@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { HomeComponent } from './home/home.component';
 import { RouterLink, RouterOutlet } from '@angular/router';
-import { FormsModule } from '@angular/forms'; 
 
 @Component({
   selector: 'app-root',
@@ -9,16 +8,13 @@ import { FormsModule } from '@angular/forms';
   imports: [
     HomeComponent,
     RouterLink,
-    RouterOutlet,
-    FormsModule,
+    RouterOutlet
   ],
   template: `
     <main>
-      <header class="brand-name">
-        <a>
-          <img class="brand-logo" src="/assets/linkedin.png" alt="logo" aria-hidden="true">
-        </a>
-      </header>
+      <div class="navbar">
+        <img class="nav-img" src="../assets/navbar.png" alt="LinkedIn Logo">
+      </div>      
       <section class="content">
         <router-outlet></router-outlet>
       </section>
