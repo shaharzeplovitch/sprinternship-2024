@@ -1,0 +1,31 @@
+body{
+width: 228px;
+height: 395px;
+flex-shrink: 0;
+border-radius: 20px;
+border: 1px solid rgba(204, 204, 204, 0.80);
+background: #FFF;
+position:static;
+padding-bottom: 50px;
+}
+
+.headings{
+    color: black;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 70px;
+    padding: 0 20px
+}
+.filters{
+    margin:0;
+}
+.ratings{
+    font-weight:normal;
+    display:inline-flex;
+    justify-content: space-between;
+    width: 52px;
+    height: 21px;
+    flex-shrink: 0;
+}
