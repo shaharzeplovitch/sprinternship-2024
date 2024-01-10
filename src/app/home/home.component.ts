@@ -3,13 +3,15 @@ import { CommonModule } from '@angular/common';
 import { CompanyComponent } from '../company/company.component';
 import { DataService } from '../services/data.service';
 import { Company } from '../interfaces/company';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-home',
   standalone: true,
   imports: [
     CommonModule,
-    CompanyComponent
+    CompanyComponent,
+    FormsModule
   ],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css'],
