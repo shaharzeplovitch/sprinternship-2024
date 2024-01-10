@@ -1,58 +1,45 @@
-<html>
+<div class="filters-container">
 
-<head>
-    <title>My Page Title</title>
-</head>
-
-<body>
     <input type="text" placeholder="        Industry type or location" class="searchbar" />
     <img src="assets/search icon.png" alt="" class="search">
     <div class="headings">
         <h1 class="filter"> Filters </h1>
         <div class="filters">
-            <h1 class="company-size"> Company Size </h1>
+            <h1 class="filter-headers company-size"> Company Size </h1>
             <div class="range">
                 <input type="number" placeholder=" min" class="min" />
-                <p class="to">to</p>
                 <input type="number" placeholder=" max" class="max" />
             </div>
             <hr>
-            <h1 class="rating"> Rating </h1>
+            <h1 class="filter-headers rating"> Rating </h1>
             <div class="range_container">
                 <div class="sliders_control">
-                   <input id="fromSlider" type="range" value="10" min="0" max="100"/>
-                   <input id="toSlider" type="range" value="30" min="0" max="100"/>
+                    <mat-slider max="5" min="1" step="0.1" thumbLabel="true">
+                        <input [value]="ratingMin" [(ngModel)]="ratingMin" matSliderStartThumb>
+                        <input [value]="ratingMax" [(ngModel)]="ratingMax" matSliderEndThumb>
+                    </mat-slider>
                 </div>
-                <div class="form_control">
-                  <div class="form_control_container">
-                      <div class="form_control_container__time">{{ ratingMin }}</div>
-                      <input class="form_control_container__time__input" type="number" id="fromInput" value="10" min="0" max="100"/>
-                    </div>
-                    <div class="form_control_container">
-                      <div class="form_control_container__time">{{ ratingMax }}</div>
-                      <input class="form_control_container__time__input" type="number" id="toInput" value="30" min="0" max="100"/>
-                    </div>
+                <div class="rating-text-container">
+                    <div>{{ ratingMin | number : '1.1' }}</div>
+                    <div>{{ ratingMax | number : '1.1'}}</div>
                 </div>
             </div>
             <hr>
-            <h1 class="industry-type"> Industry Type </h1>
+            <h1 class="filter-headers industry-type"> Industry Type </h1>
             <select class="industry-dropdown">
-                <option value="empty">  </option>
+                <option value="empty"> </option>
                 <option value="business">Business</option>
                 <option value="tech">Technology</option>
                 <option value="med">Medical</option>
-              </select>
+            </select>
             <hr>
-            <h1 class="location"> Location </h1>
+            <h1 class="filter-headers location"> Location </h1>
             <select class="location-dropdown">
-                <option value="empty">  </option>
+                <option value="empty"> </option>
                 <option>California</option>
                 <option>New York</option>
                 <option>Remote</option>
-              </select>
+            </select>
         </div>
     </div>
-
-</body>
-
-</html>
+</div>
