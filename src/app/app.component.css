@@ -11,6 +11,12 @@
   display: flex;
 }
 
+.welcome-header {
+  float: right;
+  font-size: xx-large;
+  color: blue;
+}
+
 .nav-img {
   margin: auto;
 }
