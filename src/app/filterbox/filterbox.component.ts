@@ -8,5 +8,7 @@ import { Component } from '@angular/core';
   styleUrl: './filterbox.component.css'
 })
 export class FilterboxComponent {
-
+  ratingMin=2;
+  ratingMax=4;
 }
+
