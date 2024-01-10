@@ -3,20 +3,23 @@ import { CommonModule } from '@angular/common';
 import { CompanyComponent } from '../company/company.component';
 import { DataService } from '../services/data.service';
 import { Company } from '../interfaces/company';
+import { LeftSidebarMenuComponent } from '../left-sidebar-menu/left-sidebar-menu.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
   imports: [
     CommonModule,
-    CompanyComponent
+    CompanyComponent,
+    LeftSidebarMenuComponent
   ],
   template: `
     <section>
-      <app-company
+      <app-left-sidebar-menu></app-left-sidebar-menu>
+      <!-- <app-company
         *ngFor="let company of companiesList"
         [company]="company">
-      </app-company>
+      </app-company> -->
     </section>
   `,
   styleUrls: ['./home.component.css'],
