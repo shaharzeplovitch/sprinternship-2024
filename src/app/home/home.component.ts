@@ -3,11 +3,8 @@ import { CommonModule } from '@angular/common';
 import { CompanyComponent } from '../company/company.component';
 import { DataService } from '../services/data.service';
 import { Company } from '../interfaces/company';
-<<<<<<< HEAD
 import { FormsModule } from '@angular/forms';
-=======
 import { LeftSidebarMenuComponent } from '../left-sidebar-menu/left-sidebar-menu.component';
->>>>>>> 3830f26 (working on left sidebar menu)
 
 @Component({
   selector: 'app-home',
@@ -15,23 +12,10 @@ import { LeftSidebarMenuComponent } from '../left-sidebar-menu/left-sidebar-menu
   imports: [
     CommonModule,
     CompanyComponent,
-<<<<<<< HEAD
-    FormsModule
-  ],
-  templateUrl: './home.component.html',
-=======
+    FormsModule,
     LeftSidebarMenuComponent
   ],
-  template: `
-    <section>
-      <app-left-sidebar-menu></app-left-sidebar-menu>
-      <!-- <app-company
-        *ngFor="let company of companiesList"
-        [company]="company">
-      </app-company> -->
-    </section>
-  `,
->>>>>>> 3830f26 (working on left sidebar menu)
+  templateUrl: './home.component.html',
   styleUrls: ['./home.component.css'],
 })
 
