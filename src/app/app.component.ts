@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { HomeComponent } from './home/home.component';
 import { RouterLink, RouterOutlet } from '@angular/router';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @Component({
   selector: 'app-root',
@@ -8,14 +9,16 @@ import { RouterLink, RouterOutlet } from '@angular/router';
   imports: [
     HomeComponent,
     RouterLink,
-    RouterOutlet
+    RouterOutlet,
+    NavbarComponent
   ],
   template: `
     <main>
-      <div class="navbar">
+      <!-- <div class="navbar">
         <img class="nav-img" src="../assets/navbar.png" alt="LinkedIn Logo">
-      </div>      
+      </div>       -->
       <section class="content">
+        <app-navbar></app-navbar>
         <router-outlet></router-outlet>
       </section>
     </main>
