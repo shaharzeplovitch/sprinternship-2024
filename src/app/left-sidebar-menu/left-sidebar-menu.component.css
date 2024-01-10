@@ -1,25 +1,34 @@
-body {
-    margin: 0; /* Add this line to remove default body margin */
-  }
-  
-  .sidenav {
-    width: 206px;
-    height: 35%; /* Change height to 100% to cover the entire height of the body */
-    text-align: center; /* Change text-align to left */
-    z-index: 1;
-    top: 0; /* Change top to 0 */
-    left: 0; /* Change left to 0 */
-    background: #ffffff;
-    padding: 15px 0;
-    border-radius: 20px;
-    box-shadow: 2px 0 5px hsla(240,7%,62%,1); /* Add box-shadow for a subtle border effect */
-  }
-  
-  .sidenav a {
-    padding: 6px 8px;
-    text-decoration: none;
-    font-size: 20px; /* Adjust font size for better proportion */
-    color: #B1B1B1;
-    display: block;
-  }
-  
+/* Styles for the side navigation (.sidenav) */
+
+.sidenav {
+  width: 206px;
+  height: 289px; /* Set height to 100% to cover the entire height of the body */
+  text-align: center; /* Adjusted text alignment for better readability */
+  z-index: 1;
+  top: 0; /* Positioned at the top of the page */
+  left: 0; /* Positioned at the left of the page */
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 20px;
+  box-shadow: 2px 0 5px hsla(240, 7%, 62%, 1); /* Added box-shadow for a subtle border effect */
+  margin: 0 auto; /* Center the .sidenav horizontally */
+}
+
+/* Styles for the links within the side navigation (.sidenav a) */
+
+.sidenav a {
+  padding: 15px 8px;
+  text-decoration: none;
+  font-family: Inter;
+  font-size: 18px; /* Adjusted font size for better proportion */
+  color: #B1B1B1;
+  display: block;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+/* Styles for icons within the side navigation (.sidenav i) */
+
+.sidenav i {
+  margin-right: 8px; /* Added margin to separate icon from text */
+}
