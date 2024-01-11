@@ -31,8 +31,6 @@
   background: lightgray 0px 0px / 100% 100% no-repeat, #FFF;
   padding: 20px;
 }
-.company-location {
-}
 .company-location::before {
   content: url("/assets/location-pin.svg") / "";
 }
@@ -43,7 +41,4 @@
   height: 24px;
   flex-shrink: 0;
   left: 740px;
-}
-.bookmark-icon:hover {
-  
 }
