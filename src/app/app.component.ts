@@ -14,9 +14,6 @@ import { NavbarComponent } from './navbar/navbar.component';
   ],
   template: `
     <main>
-      <!-- <div class="navbar">
-        <img class="nav-img" src="../assets/navbar.png" alt="LinkedIn Logo">
-      </div>       -->
       <section class="content">
         <app-navbar></app-navbar>
         <router-outlet></router-outlet>

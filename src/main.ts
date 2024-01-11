@@ -13,7 +13,6 @@ bootstrapApplication(AppComponent,
     providers: [
     provideProtractorTestingSupport(),
     provideRouter(routeConfig),
-    provideAnimations(),
     provideAnimations()
 ]
   }
