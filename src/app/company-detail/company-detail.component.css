@@ -29,3 +29,12 @@
     object-fit: cover;
   }
   
+.job-card {
+    color: #000;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 20px;
+}
