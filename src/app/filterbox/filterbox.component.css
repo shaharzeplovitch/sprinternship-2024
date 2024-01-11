@@ -8,7 +8,6 @@
     position: relative;
     top: 70px;
 }
-
 hr{
     width: 192px;
     height: 1px;
@@ -18,13 +17,11 @@ hr{
     border-width: 0px;
     height: 1px;
 }
-
 .search {
     position: relative;
     top: -95px;
     left: 10px;
 }
-
 .searchbar {
     width: 281px;
     height: 32px;
@@ -35,28 +32,35 @@ hr{
     position: relative;
     top: -70px;
 }
-
 .headings {
     color: black;
     font-family: Inter;
     padding: 0 20px;
+    font-weight:400;
 }
-
 .filter {
     margin-top: -35px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     font-weight: 700;
-    font-size: 22px;
+    font-size: 20px;
 }
-
-.company-size {
+/* .company-size {
+    font-weight: 600;
     margin-bottom: 20px;
 }
-
-.filter-headers {
+.rating{
     font-weight: 600;
 }
-
+.industry-size{
+    font-weight: 600;
+}
+.location{
+    font-weight: 600;
+} */
+.filter-headers {
+    font-size: 15px;
+    font-weight: 500;
+}
 .min {
     width: 70px;
     height: 27px;
@@ -67,7 +71,6 @@ hr{
     text-align: center;
     margin-right: 20px;
 }
-
 .max {
     width: 70px;
     height: 27px;
@@ -77,17 +80,15 @@ hr{
     background: #FFF;
     text-align: center;
 }
-
 .range {
     display: flex;
     /* justify-content: space-between; */
+    margin-top: 10px;
     margin-bottom: 10px;
 }
-
 .industry-type {
     margin-bottom: 10px;
 }
-
 .industry-dropdown {
     width: 105px;
     height: 23px;
@@ -97,11 +98,9 @@ hr{
     background: #FFF;
     margin-bottom: 20px;
 }
-
 .location {
     margin-bottom: 10px;
 }
-
 .location-dropdown {
     width: 105px;
     height: 23px;
@@ -111,17 +110,16 @@ hr{
     background: #FFF;
     margin-bottom: 20px;
 }
-
 .sliders_control {
     position: relative;
     min-height: 10px;
 }
-
 .rating-text-container {
     display: flex;
     justify-content: space-between;
+    font-size: 12px;
+    margin-bottom: 5px;
 }
-
 mat-slider {
     width: 95%;
 }
