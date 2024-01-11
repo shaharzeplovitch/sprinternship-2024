@@ -1,13 +1,17 @@
 <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
 <section>
-    <div class="container">
-        <h1 class="heading">Explore Companies</h1>
-        <p class="subtitle">Based on your profile and search history</p>
-        <div class="company-card">
-            <app-company
-            *ngFor="let company of companiesList"
-            [company]="company">
-        </app-company>
-        </div>
+  <div>
+    <app-left-sidebar-menu></app-left-sidebar-menu>
+  </div>
+  <div class="container">
+    <h1 class="heading">Explore Companies</h1>
+    <p class="subtitle">Based on your profile and search history</p>
+    <div class="company-card">
+      <app-company *ngFor="let company of companiesList" [company]="company">
+      </app-company>
     </div>
+  </div>
+  <div>
+    <app-filterbox></app-filterbox>
+  </div>
 </section>
