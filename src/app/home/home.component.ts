@@ -13,9 +13,9 @@ import { LeftSidebarMenuComponent } from '../left-sidebar-menu/left-sidebar-menu
   imports: [
     CommonModule,
     CompanyComponent,
-    FilterboxComponent,
     FormsModule,
-    LeftSidebarMenuComponent
+    LeftSidebarMenuComponent,
+    FilterboxComponent
   ],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css'],
