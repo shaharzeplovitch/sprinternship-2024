@@ -6,14 +6,16 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  padding: 20px;
   border-bottom: 1px solid #888;
+  padding: 20px;
+  /* padding-bottom: 24px; */
 }
 
 .company-heading {
   color: var(--primary-color);
-  padding: 10px 20px 0 20px;
+  /* padding: 10px 20px 0 20px; */
 }
+
 .company-text {
   color: #000;
   font-family: Inter;
@@ -22,6 +24,7 @@
   font-weight: 400;
   line-height: normal;
 }
+
 .company-photo {
   width: 83px;
   height: 84px;
@@ -30,20 +33,20 @@
   float: left;
   background: lightgray 0px 0px / 100% 100% no-repeat, #FFF;
   padding: 20px;
+  position: relative;
 }
-.company-location {
-}
+
 .company-location::before {
   content: url("/assets/location-pin.svg") / "";
 }
+
 .bookmark-icon {
   cursor: pointer;
-  position: absolute;
   width: 24px;
   height: 24px;
-  flex-shrink: 0;
-  left: 740px;
 }
-.bookmark-icon:hover {
-  
+
+.company-container {
+  display: flex;
+  justify-content: space-between;
 }
