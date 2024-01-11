@@ -1,0 +1,127 @@
+.filters-container {
+    width: 228px;
+    height: 395px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    border: 1px solid rgba(204, 204, 204, 0.80);
+    background: #FFF;
+    position: relative;
+    top: 70px;
+}
+
+hr{
+    width: 192px;
+    height: 1px;
+    margin-bottom: 10px;
+    color: #E3E3E5;
+    background: #E3E3E5;
+    border-width: 0px;
+    height: 1px;
+}
+
+.search {
+    position: relative;
+    top: -95px;
+    left: 10px;
+}
+
+.searchbar {
+    width: 281px;
+    height: 32px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    border: 1px solid rgba(204, 204, 204, 0.80);
+    background: white;
+    position: relative;
+    top: -70px;
+}
+
+.headings {
+    color: black;
+    font-family: Inter;
+    padding: 0 20px;
+}
+
+.filter {
+    margin-top: -35px;
+    margin-bottom: 5px;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.company-size {
+    margin-bottom: 20px;
+}
+
+.filter-headers {
+    font-weight: 600;
+}
+
+.min {
+    width: 70px;
+    height: 27px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    border: 1px solid #D9D9D9;
+    background: #FFF;
+    text-align: center;
+    margin-right: 20px;
+}
+
+.max {
+    width: 70px;
+    height: 27px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    border: 1px solid #D9D9D9;
+    background: #FFF;
+    text-align: center;
+}
+
+.range {
+    display: flex;
+    /* justify-content: space-between; */
+    margin-bottom: 10px;
+}
+
+.industry-type {
+    margin-bottom: 10px;
+}
+
+.industry-dropdown {
+    width: 105px;
+    height: 23px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    border: 1px solid #D9D9D9;
+    background: #FFF;
+    margin-bottom: 20px;
+}
+
+.location {
+    margin-bottom: 10px;
+}
+
+.location-dropdown {
+    width: 105px;
+    height: 23px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    border: 1px solid #D9D9D9;
+    background: #FFF;
+    margin-bottom: 20px;
+}
+
+.sliders_control {
+    position: relative;
+    min-height: 10px;
+}
+
+.rating-text-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+mat-slider {
+    width: 95%;
+}

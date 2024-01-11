@@ -1,0 +1,50 @@
+/* Styles for the side navigation (.sidenav) */
+
+.sidenav {
+  width: 206px;
+  height: 289px; /* Set height to 100% to cover the entire height of the body */
+  /* text-align: center; Adjusted text alignment for better readability */
+  z-index: 1;
+  top: 0; /* Positioned at the top of the page */
+  left: 0; /* Positioned at the left of the page */
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 20px;
+  box-shadow: 2px 0 5px hsla(240, 7%, 62%, 1); /* Added box-shadow for a subtle border effect */
+  margin: 0 auto; /* Center the .sidenav horizontally */
+}
+
+/* Styles for the links within the side navigation (.sidenav a) */
+
+.sidenav a {
+  padding: 15px 8px;
+  text-decoration: none;
+  font-family: Inter;
+  font-size: 18px; /* Adjusted font size for better proportion */
+  color: #B1B1B1;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+/* Styles for icons within the side navigation (.sidenav i) */
+
+.sidenav i {
+  margin-right: 8px;
+}
+
+.sidenav  {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-around;
+}
+
+li {
+  width: 160px;
+  list-style: none;
+}
+
+.selected a {
+  color: #0A66C2;
+}

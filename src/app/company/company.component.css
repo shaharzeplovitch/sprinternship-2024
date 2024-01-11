@@ -6,8 +6,8 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  padding: 20px;
   border-bottom: 1px solid #888;
+  padding-bottom: 24px;
 }
 
 .company-heading {
@@ -30,6 +30,7 @@
   float: left;
   background: lightgray 0px 0px / 100% 100% no-repeat, #FFF;
   padding: 20px;
+  position: relative;
 }
 .company-location {
 }
@@ -38,11 +39,12 @@
 }
 .bookmark-icon {
   cursor: pointer;
-  position: absolute;
+  position: relative;
+  display:flex;
   width: 24px;
   height: 24px;
-  flex-shrink: 0;
-  left: 740px;
+  left: 670px;
+  top: 32px;
 }
 .bookmark-icon:hover {
   
