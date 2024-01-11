@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { CompanyComponent } from '../company/company.component';
 import { DataService } from '../services/data.service';
 import { Company } from '../interfaces/company';
-// import { FilterboxComponent } from '../filterbox/filterbox.component';
+import { FilterboxComponent } from '../filterbox/filterbox.component';
 import { FormsModule } from '@angular/forms';
 import { LeftSidebarMenuComponent } from '../left-sidebar-menu/left-sidebar-menu.component';
 
@@ -14,7 +14,8 @@ import { LeftSidebarMenuComponent } from '../left-sidebar-menu/left-sidebar-menu
     CommonModule,
     CompanyComponent,
     FormsModule,
-    LeftSidebarMenuComponent
+    LeftSidebarMenuComponent,
+    FilterboxComponent
   ],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css'],

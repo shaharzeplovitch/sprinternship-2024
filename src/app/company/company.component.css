@@ -7,12 +7,13 @@
   font-weight: 400;
   line-height: normal;
   border-bottom: 1px solid #888;
-  padding-bottom: 24px;
+  padding: 20px;
+  /* padding-bottom: 24px; */
 }
 
 .company-heading {
   color: var(--primary-color);
-  padding: 10px 20px 0 20px;
+  /* padding: 10px 20px 0 20px; */
 }
 .company-text {
   color: #000;
@@ -32,20 +33,16 @@
   padding: 20px;
   position: relative;
 }
-.company-location {
-}
 .company-location::before {
   content: url("/assets/location-pin.svg") / "";
 }
 .bookmark-icon {
   cursor: pointer;
-  position: relative;
-  display:flex;
   width: 24px;
   height: 24px;
-  left: 670px;
-  top: 32px;
 }
-.bookmark-icon:hover {
-  
+
+.company-container {
+  display: flex;
+  justify-content: space-between;
 }
