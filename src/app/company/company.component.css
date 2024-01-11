@@ -12,7 +12,7 @@
 
 .company-heading {
   color: var(--primary-color);
-  padding: 10px 20px 0 20px;
+  /* padding: 10px 20px 0 20px; */
 }
 .company-text {
   color: #000;
@@ -36,9 +36,11 @@
 }
 .bookmark-icon {
   cursor: pointer;
-  position: absolute;
   width: 24px;
   height: 24px;
-  flex-shrink: 0;
-  padding: 30px 0 0 650px;
+}
+
+.company-container {
+  display: flex;
+  justify-content: space-between;
 }
