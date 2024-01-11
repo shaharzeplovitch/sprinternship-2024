@@ -74,7 +74,7 @@ img.right-img {
 }
 
 .selected {
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid rgb(30, 30, 30);
 }
 
 .container .active {
