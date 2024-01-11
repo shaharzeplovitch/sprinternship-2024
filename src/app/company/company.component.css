@@ -12,7 +12,7 @@
 
 .company-heading {
   color: var(--primary-color);
-  padding: 10px 20px 0 20px;
+  /* padding: 10px 20px 0 20px; */
 }
 .company-text {
   color: #000;
@@ -31,19 +31,16 @@
   background: lightgray 0px 0px / 100% 100% no-repeat, #FFF;
   padding: 20px;
 }
-.company-location {
-}
 .company-location::before {
   content: url("/assets/location-pin.svg") / "";
 }
 .bookmark-icon {
   cursor: pointer;
-  position: absolute;
   width: 24px;
   height: 24px;
-  flex-shrink: 0;
-  left: 740px;
 }
-.bookmark-icon:hover {
-  
+
+.company-container {
+  display: flex;
+  justify-content: space-between;
 }

@@ -2,12 +2,14 @@ import { Component, Input, inject } from '@angular/core';
 import { Router, RouterModule } from '@angular/router';
 import { Company } from '../interfaces/company';
 import { DataService } from '../services/data.service';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-company',
   standalone: true,
   imports: [
-    RouterModule
+    RouterModule,
+    CommonModule
   ],
   templateUrl: './company.component.html',
   styleUrl: './company.component.css'
