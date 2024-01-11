@@ -1,0 +1,31 @@
+.container {
+    margin-top: 50px; /* Adjust the margin-top value as needed */
+  }
+  
+  .company-background {
+    position: relative;
+    width: 1160px;
+    height: 194px;
+    margin: 0 auto; /* Center the element horizontally */
+  }
+  
+  .company-background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .logo {
+    width: 140px;
+    height: 140px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  
+  .logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  

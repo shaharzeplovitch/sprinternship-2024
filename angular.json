@@ -26,11 +26,8 @@
               "src/assets/images"
             ],
             "styles": [
-<<<<<<< HEAD
               "@angular/material/prebuilt-themes/indigo-pink.css",
-=======
               "node_modules/@fortawesome/fontawesome-free/css/all.min.css",
->>>>>>> main
               "src/styles.css"
             ],
             "scripts": []
