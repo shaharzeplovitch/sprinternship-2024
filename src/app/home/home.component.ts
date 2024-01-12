@@ -8,7 +8,7 @@ import { FilterboxComponent } from '../filterbox/filterbox.component';
 import { FormsModule } from '@angular/forms';
 import { LeftSidebarMenuComponent } from '../left-sidebar-menu/left-sidebar-menu.component';
 import { SuggestedCompaniesComponent } from '../suggested-companies/suggested-companies.component';
-import { ExperienceComponent } from '../experience/experience.component';
+import { ExperienceComponent } from '../experience/experience.component'; 
 
 @Component({
   selector: 'app-home',
@@ -19,7 +19,8 @@ import { ExperienceComponent } from '../experience/experience.component';
     FormsModule,
     LeftSidebarMenuComponent,
     FilterboxComponent,
-    SuggestedCompaniesComponent
+    SuggestedCompaniesComponent,
+    ExperienceComponent
   ],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css'],
@@ -27,15 +28,15 @@ import { ExperienceComponent } from '../experience/experience.component';
 export class HomeComponent {
   dataService: DataService = inject(DataService);
   companiesList: Company[] = [];
-  // experienceList: Experience[] = [];
+  experienceList: Experience[] = [];
   //  suggestedCompaniesList: SuggestedCompanies[] = [];
   constructor() {
     this.dataService.getAllCompanies().then((companiesList: Company[]) => {
       this.companiesList = companiesList;
     });
-    // this.dataService.getAllExperiences().then((experienceList: Experience[]) => {
-    //   this.experienceList = experienceList;
-    // });
+    this.dataService.getAllExperiences().then((experienceList: Experience[]) => {
+      this.experienceList = experienceList;
+    });
     // this.dataService.getAllSuggestedCompanies().then((suggestedCompaniesList: SuggestedCompanies[]) => {
     //   this.suggestedCompaniesList = suggestedCompaniesList;
     // });
