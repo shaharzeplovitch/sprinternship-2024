@@ -29,8 +29,8 @@ button {
   color: #CCCCCCCC;
 }
 .container-suggested {
-  width: 400px;
-  height: 320px;
+  width: 320px;
+  height: 330px;
   flex-shrink: 0; 
   border-radius: 20px;
   border: 1px solid rgba(204, 204, 204, 0.80);

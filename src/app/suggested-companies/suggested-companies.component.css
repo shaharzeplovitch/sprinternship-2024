@@ -38,10 +38,9 @@ p {
     flex-shrink: 0;
     object-fit: cover;
     background: lightgray 0px 0px / 100% 100% no-repeat, #FFF;
+    padding-right: 30px;
 }
 
 .company-container {
     display: flex;
-    justify-content: space-between;
-
 }
