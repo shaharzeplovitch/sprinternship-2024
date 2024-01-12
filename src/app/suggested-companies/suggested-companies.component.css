@@ -1,12 +1,10 @@
 .company-card {
     padding: 5px;
-    margin-left:10px;
+    margin-left: 33px;
     color: #000;
     font-family: Inter;
-    font-size: 15px;
     font-style: normal;
     line-height: normal;
-    /* padding-bottom: 24px; */
 }
 
 .company-heading {
@@ -14,26 +12,19 @@
     color: var(--primary-color);
     color: #000;
     font-family: Inter;
-    font-size: 12px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    /* padding: 10px 20px 0 20px; */
+    font-size: 15px;
 }
 
-p {
-    color: #000;
-    font-family: Inter;
-    font-size: 11px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    padding-right: 10px;
+.company-industry {
+    font-size: 15px;
 }
 
 .company-photo {
-    width: 40px;
-    height: 40px;
+    width: 56px;
+    height: 56px;
     flex-shrink: 0;
     object-fit: cover;
     background: lightgray 0px 0px / 100% 100% no-repeat, #FFF;

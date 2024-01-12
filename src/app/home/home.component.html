@@ -1,6 +1,6 @@
 <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
 <section>
-  <!-- <div>
+  <div>
     <app-left-sidebar-menu></app-left-sidebar-menu>
   </div>
   <div class="container">
@@ -11,17 +11,12 @@
       </app-company>
     </div>
   </div>
-  <div> -->
+  <div>
     <div class="container-suggested">
       <h1 class="heading-suggested">Suggested Companies</h1>
       <div class="company-card">
-      <app-suggested-companies *ngFor="let company of companiesList" [company]="company"></app-suggested-companies> 
-    </div></div>
-
-
-    <!-- <div class="container-experience">
-    <app-experience *ngFor="let experience of experienceList" [experience]="experience"></app-experience>
-  </div> -->
-    <!-- <app-filterbox></app-filterbox>
-  </div> -->
+        <app-suggested-companies *ngFor="let company of companiesList" [company]="company"></app-suggested-companies>
+      </div>
+    </div>
+  </div>
 </section>

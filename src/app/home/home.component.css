@@ -28,8 +28,9 @@ button {
   background: #FFF;
   color: #CCCCCCCC;
 }
+
 .container-suggested {
-  width: 320px;
+  width: 393px;
   flex-shrink: 0; 
   border-radius: 20px;
   border: 1px solid rgba(204, 204, 204, 0.80);
@@ -37,6 +38,7 @@ button {
   color: #CCCCCCCC;
   padding-bottom: 10px;
 }
+
 .container-experience {
   width: 350px;
   flex-shrink: 0; 
@@ -46,6 +48,7 @@ button {
   color: #CCCCCCCC;
   padding-bottom: 10px;
 }
+
 .heading {
   width: 203px;
   height: 26px;
@@ -59,17 +62,14 @@ button {
 }
 
 .heading-suggested {
-  width: 203px;
-  height: 26px;
-  flex-shrink: 0;
   color: #000;
   font-family: Inter;
-  font-size: 15px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  padding:15px;
-  margin-bottom: 15px;
+  margin-left: 36px;
+  margin-top: 30px;
 }
 
 .subtitle {
