@@ -30,12 +30,12 @@ button {
 }
 .container-suggested {
   width: 320px;
-  height: 300px;
   flex-shrink: 0; 
   border-radius: 20px;
   border: 1px solid rgba(204, 204, 204, 0.80);
   background: #FFF;
   color: #CCCCCCCC;
+  padding-bottom: 10px;
 }
 
 .heading {
