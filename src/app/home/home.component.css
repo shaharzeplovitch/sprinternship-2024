@@ -28,6 +28,15 @@ button {
   background: #FFF;
   color: #CCCCCCCC;
 }
+.container-suggested {
+  width: 400px;
+  height: 320px;
+  flex-shrink: 0; 
+  border-radius: 20px;
+  border: 1px solid rgba(204, 204, 204, 0.80);
+  background: #FFF;
+  color: #CCCCCCCC;
+}
 
 .heading {
   width: 203px;
@@ -39,6 +48,20 @@ button {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+}
+
+.heading-suggested {
+  width: 203px;
+  height: 26px;
+  flex-shrink: 0;
+  color: #000;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding:15px;
+  margin-bottom: 15px;
 }
 
 .subtitle {

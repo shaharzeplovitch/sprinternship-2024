@@ -17,6 +17,11 @@ export class DataService {
     return await data.json() ?? [];
   }
 
+  async getAllSuggestedCompanies(): Promise<Company[]> {
+    const data = await fetch(this.companyUrl);
+    return await data.json() ?? [];
+  }
+
   async getJobById(jobId: number): Promise<Job> {
     const data = await fetch(`${this.jobsUrl}/${jobId}`);
     return await data.json() ?? {};
