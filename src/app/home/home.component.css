@@ -21,7 +21,7 @@ button {
 
 .container {
   padding: 40px;
-  width: 800px;
+  width: 950px;
   flex-shrink: 0;
   border-radius: 20px;
   border: 1px solid rgba(204, 204, 204, 0.80);
