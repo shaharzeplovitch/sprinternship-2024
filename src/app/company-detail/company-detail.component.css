@@ -1,9 +1,13 @@
-.job-card {
-    color: #000;
-    font-family: Inter;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    padding: 20px;
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    padding: 40px;
+    width: 800px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    border: 1px solid rgba(204, 204, 204, 0.80);
+    background: #FFF;
+    color: #CCCCCCCC;
 }
