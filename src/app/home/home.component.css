@@ -27,9 +27,7 @@ button {
   border: 1px solid rgba(204, 204, 204, 0.80);
   background: #FFF;
   color: #CCCCCCCC;
-  margin-top: 20px;
-  margin-left: 40px;
-  margin-right: 40px;
+  margin: 20px 40px 0 40px;
 }
 
 .heading {
@@ -62,21 +60,20 @@ button {
   flex-shrink: 0;
 }
 
-.parent-container{
+.parent-container {
   display: flex;
   justify-content: center;
 }
 
-.left-sidebar{
+.left-sidebar {
   position: sticky;
   top: 50px;
   left: 20px;
-  margin-left: 20px;
   display:inline-block;
   margin-top: 100px;
 }
 
-.filterbox{
+.filterbox {
   position: sticky;
   top: 30px;
   margin-top: 20px;
