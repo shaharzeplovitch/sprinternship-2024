@@ -12,6 +12,8 @@
     </div>
   </div>
   <div>
+    <app-suggested-companies *ngFor="let company of companiesList" [company]="company"></app-suggested-companies> 
+    <!-- <app-experience *ngFor="let experience of experienceList" [experience]="experience"></app-experience> -->
     <app-filterbox></app-filterbox>
   </div>
 </section>

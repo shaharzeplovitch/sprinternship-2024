@@ -1,0 +1,52 @@
+
+.company-card {
+    color: #000;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-bottom: 1px solid #888;
+    padding: 20px;
+    /* padding-bottom: 24px; */
+  }
+  
+  .company-heading {
+    color: var(--primary-color);
+    /* padding: 10px 20px 0 20px; */
+  }
+  
+  .company-text {
+    color: #000;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  
+  .company-photo {
+    width: 83px;
+    height: 84px;
+    flex-shrink: 0;
+    object-fit: cover;
+    float: left;
+    background: lightgray 0px 0px / 100% 100% no-repeat, #FFF;
+    padding: 20px;
+    position: relative;
+  }
+  
+  .company-location::before {
+    content: url("/assets/location-pin.svg") / "";
+  }
+  
+  .bookmark-icon {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+  }
+  
+  .company-container {
+    display: flex;
+    justify-content: space-between;
+  }
