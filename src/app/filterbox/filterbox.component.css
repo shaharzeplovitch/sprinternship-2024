@@ -21,10 +21,10 @@ hr{
 .search {
     position: relative;
     top: -95px;
-    left: -13px;
+    left: 10px;
 }
 .searchbar {
-    width: 281px;
+    width: 228px;
     height: 32px;
     flex-shrink: 0;
     border-radius: 5px;
@@ -32,7 +32,6 @@ hr{
     background: white;
     position: relative;
     top: -70px;
-    right:23px;
 }
 
 .searchbar-container{
