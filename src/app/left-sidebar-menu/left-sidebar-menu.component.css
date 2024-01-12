@@ -10,8 +10,11 @@
   background: #ffffff;
   padding: 15px;
   border-radius: 20px;
-  box-shadow: 2px 0 5px hsla(240, 7%, 62%, 1); /* Added box-shadow for a subtle border effect */
+  /* box-shadow: 2px 0 5px hsla(240, 7%, 62%, 1); Added box-shadow for a subtle border effect */
   margin: 0 auto; /* Center the .sidenav horizontally */
+  fill: #FFF;
+  stroke-width: 1px;
+  border: 1px solid rgba(204, 204, 204, 0.80);
 }
 
 /* Styles for the links within the side navigation (.sidenav a) */

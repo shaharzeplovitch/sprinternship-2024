@@ -7,9 +7,7 @@ import { Experience } from '../interfaces/experience';
 import { FilterboxComponent } from '../filterbox/filterbox.component';
 import { FormsModule } from '@angular/forms';
 import { LeftSidebarMenuComponent } from '../left-sidebar-menu/left-sidebar-menu.component';
-import { SuggestedCompaniesComponent } from '../suggested-companies/suggested-companies.component';
 import { ExperienceComponent } from '../experience/experience.component'; 
-
 @Component({
   selector: 'app-home',
   standalone: true,
@@ -19,7 +17,6 @@ import { ExperienceComponent } from '../experience/experience.component';
     FormsModule,
     LeftSidebarMenuComponent,
     FilterboxComponent,
-    SuggestedCompaniesComponent,
     ExperienceComponent
   ],
   templateUrl: './home.component.html',
@@ -37,8 +34,5 @@ export class HomeComponent {
     this.dataService.getAllExperiences().then((experienceList: Experience[]) => {
       this.experienceList = experienceList;
     });
-    // this.dataService.getAllSuggestedCompanies().then((suggestedCompaniesList: SuggestedCompanies[]) => {
-    //   this.suggestedCompaniesList = suggestedCompaniesList;
-    // });
   }
 }
