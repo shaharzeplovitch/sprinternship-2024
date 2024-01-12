@@ -1,1 +1,6 @@
-<p>company-detail works!</p>
+<div class="container-suggested">
+  <h1 class="heading-suggested">Suggested Companies</h1>
+  <div class="company-card">
+    <app-suggested-companies *ngFor="let company of companiesList" [company]="company"></app-suggested-companies>
+  </div>
+</div>

@@ -1,0 +1,36 @@
+.company-card {
+    padding: 5px;
+    margin-left: 33px;
+    color: #000;
+    font-family: Inter;
+    font-style: normal;
+    line-height: normal;
+}
+
+.company-heading {
+    flex-shrink: 0;
+    color: var(--primary-color);
+    color: #000;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    font-size: 15px;
+}
+
+.company-industry {
+    font-size: 15px;
+}
+
+.company-photo {
+    width: 56px;
+    height: 56px;
+    flex-shrink: 0;
+    object-fit: cover;
+    background: lightgray 0px 0px / 100% 100% no-repeat, #FFF;
+    padding-right: 30px;
+}
+
+.company-container {
+    display: flex;
+}
