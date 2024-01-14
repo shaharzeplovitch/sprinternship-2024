@@ -1,6 +1,31 @@
-<!--Overlay-->
-
-<!--List of experiences-->
-<div class="container-experience">
-    <app-single-experience *ngFor="let experience of experienceList" [experience]="experience"></app-single-experience>
+<div class="container">
+    <div class="margin">
+        <h1 class="heading">Interview & Job Experiences</h1>
+        <div class="filters">
+            <input type="text" placeholder="      Search keywords" class="searchbar">
+            <div class="dropdown-container">
+                <h3 class="sort">Sort</h3>
+                <select class="sort-dropdown">
+                    <option value="most-recent">Most recent</option>
+                    <option value="Hi-lo">Highest to lowest</option>
+                    <option value="lo-hi">Lowest to highest</option>
+                    <option value="relevant">Most relevant</option>
+                </select>
+            </div>
+        </div>
+        <h3 class="people-often-mention">People often mention</h3>
+        <div class="attributes">
+            <h3 class="trees">trees</h3>
+            <h3 class="data-structures">data structures</h3>
+            <h3 class="work">work-life balance</h3>
+            <h3 class="benefits">benefits</h3>
+            <h3 class="bonus">bonus</h3>
+            <h3 class="leetcode">leetcode</h3>
+            <h3 class="six">+6</h3>
+        </div>
+    </div>
+    <div class="container-experience">
+        <app-single-experience *ngFor="let experience of experienceList" [experience]="experience"></app-single-experience>
+    </div>
 </div>
+
