@@ -12,4 +12,5 @@ export interface Company {
   founded: string;
   isBookmarked: boolean;
   companyReviews: number;
+  companyDetailLogo?: string;
 }
