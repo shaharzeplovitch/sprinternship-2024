@@ -11,4 +11,5 @@ export interface Company {
   competitors: string;
   founded: string;
   isBookmarked: boolean;
+  companyReviews: number;
 }
