@@ -7,17 +7,19 @@
     <div class="experience-container">
       <div class="experience-experience-container">
         <div class="">
-          <!-- <p class="experience-location">Location: {{ experience.location}}</p> -->
-          <!-- <p class="experience-rating">{{ experience.applicationProcess }}</p> -->
-          <p class="experience-experience">{{ experience.interviewExperience }}</p>
+          <div class="experience-star-rating">
+            <span *ngFor="let star of getStars(experience.overallRating)" class="star-filled">&#9733;</span>
+          </div>
+          <p class="experience-experience">{{ experience.message }}</p>
         </div>
         <div class="experience-feedback">
-          <p class="experience-">Received Offer: {{ experience.receivedOffer }}</p>
-          <p class="experience-">Accepted Offer: {{ experience.acceptedOffer }}</p>
-          <p class="experience-">Difficulty: {{ experience.isDifficult }}</p>
+          <p>Difficulty: {{ experience.difficultyRating }}.0</p>
+          <p>Benefits: {{ experience.benefitsRating }}.0</p>
+          <p>Work-life Balance: {{ experience.workLifeBalanceRating }}.0</p>
+          <p>Company Culture: {{ experience.companyCultureRating }}.0</p>
         </div>
         <div class="experience-helpful">
-          <p class=""><b>{{ experience.foundHelpfulCount }}</b> people found this helpful</p>
+          <p><b>100</b> people found this helpful</p>
         </div>
       </div>
     </div>

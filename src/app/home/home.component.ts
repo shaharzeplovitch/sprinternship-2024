@@ -26,13 +26,14 @@ export class HomeComponent {
   dataService: DataService = inject(DataService);
   companiesList: Company[] = [];
   experienceList: Experience[] = [];
-  //  suggestedCompaniesList: SuggestedCompanies[] = [];
+
   constructor() {
     this.dataService.getAllCompanies().then((companiesList: Company[]) => {
       this.companiesList = companiesList;
     });
-    this.dataService.getAllExperiences().then((experienceList: Experience[]) => {
+    this.dataService.getExperiencesByJobId(1243).then((experienceList: Experience[]) => {
       this.experienceList = experienceList;
+      console.log(experienceList);
     });
   }
 }

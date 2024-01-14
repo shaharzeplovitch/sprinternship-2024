@@ -13,7 +13,7 @@
     color: #000;
     font-family: Inter;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 600;
     line-height: normal;
     font-size: 15px;
 }
@@ -28,9 +28,15 @@
     flex-shrink: 0;
     object-fit: cover;
     background: lightgray 0px 0px / 100% 100% no-repeat, #FFF;
-    padding-right: 30px;
+    padding-right: 8px;
 }
 
 .company-container {
     display: flex;
+}
+
+.company-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }

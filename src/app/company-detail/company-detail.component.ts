@@ -16,7 +16,7 @@ export class CompanyDetailComponent {
   companiesList: Company[] = [];
 
   constructor() {
-    this.dataService.getAllCompanies().then((companiesList: Company[]) => {
+    this.dataService.getAllSuggestedCompanies().then((companiesList: Company[]) => {
       this.companiesList = companiesList;
     });
   }
