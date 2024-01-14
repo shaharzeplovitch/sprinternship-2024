@@ -1,0 +1,160 @@
+.container {
+    width: 521px;
+    height: 781px;
+    flex-shrink: 0;
+    border: 1px solid rgba(204, 204, 204, 0.80);
+    background: #EFEFF0;
+}
+
+.margin {
+    margin-left: 39px;
+}
+
+.heading {
+    margin-top: 20px;
+    color: #000;
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.searchbar {
+    width: 218px;
+    height: 32px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    border: 1px solid rgba(204, 204, 204, 0.80);
+    background: #E7ECFF;
+    margin-right: 40px;
+}
+
+.sort {
+    color: #1E1E1E;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: -0.285px;
+    margin-right: 10px;
+
+}
+
+select {
+    width: 133px;
+    height: 24px;
+    border-radius: 5px;
+    border: 1px solid rgba(204, 204, 204, 0.80);
+}
+
+.dropdown-container {
+    display: flex;
+    margin: 5px;
+}
+
+.filters {
+    display: flex;
+}
+
+.people-often-mention {
+    margin-top: 20px;
+    width: 154px;
+    height: 36px;
+    flex-shrink: 0;
+    color: #000;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: -10px;
+}
+
+.trees {
+    border: 2px solid;
+    border-radius: 10px;
+    background-color: white;
+    color: #0A66C2;
+    width: 59px;
+    height: 25px;
+    padding-top: 4px;
+    margin-right: 11px;
+    margin-bottom: 5px;
+}
+
+.data-structures {
+    border: 2px solid;
+    border-radius: 10px;
+    background-color: white;
+    color: #0A66C2;
+    width: 141px;
+    height: 25px;
+    padding-top: 4px;
+    margin-right: 11px;
+    margin-bottom: 5px;
+}
+
+.work {
+    border: 2px solid;
+    border-radius: 10px;
+    background-color: white;
+    color: #0A66C2;
+    width: 154px;
+    height: 25px;
+    padding-top: 4px;
+    margin-right: 11px;
+    margin-bottom: 5px;
+}
+
+.benefits {
+    border: 2px solid;
+    border-radius: 10px;
+    background-color: white;
+    color: #0A66C2;
+    width: 82px;
+    height: 25px;
+    padding-top: 4px;
+    margin-right: 11px;
+}
+
+.bonus {
+    border: 2px solid;
+    border-radius: 10px;
+    background-color: white;
+    color: #0A66C2;
+    width: 71px;
+    height: 25px;
+    padding-top: 4px;
+    margin-right: 11px;
+}
+
+.leetcode {
+    border: 2px solid;
+    border-radius: 10px;
+    background-color: white;
+    color: #0A66C2;
+    width: 80px;
+    height: 25px;
+    padding-top: 4px;
+    margin-right: 11px;
+}
+
+.six {
+    border: 2px solid;
+    border-radius: 10px;
+    background-color: white;
+    color: #0A66C2;
+    width: 43px;
+    height: 25px;
+    padding-top: 4px;
+    margin-right: 11px;
+
+}
+
+.attributes {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
