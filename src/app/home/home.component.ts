@@ -7,7 +7,7 @@ import { Experience } from '../interfaces/experience';
 import { FilterboxComponent } from '../filterbox/filterbox.component';
 import { FormsModule } from '@angular/forms';
 import { LeftSidebarMenuComponent } from '../left-sidebar-menu/left-sidebar-menu.component';
-import { ExperienceComponent } from '../experience/experience.component'; 
+import { SingleExperienceComponent } from '../single-experience/single-experience.component';
 @Component({
   selector: 'app-home',
   standalone: true,
@@ -17,7 +17,7 @@ import { ExperienceComponent } from '../experience/experience.component';
     FormsModule,
     LeftSidebarMenuComponent,
     FilterboxComponent,
-    ExperienceComponent
+    SingleExperienceComponent
   ],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css'],
@@ -26,7 +26,7 @@ export class HomeComponent {
   dataService: DataService = inject(DataService);
   companiesList: Company[] = [];
   experienceList: Experience[] = [];
-  //  suggestedCompaniesList: SuggestedCompanies[] = [];
+
   constructor() {
     this.dataService.getAllCompanies().then((companiesList: Company[]) => {
       this.companiesList = companiesList;

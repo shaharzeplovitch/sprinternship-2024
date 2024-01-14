@@ -1,4 +1,12 @@
-.container {
+.container-experience {
+  width: 420px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  /* border: 1px solid rgba(204, 204, 204, 0.80); */
+  /* color: #CCCCCCCC; */
+  padding-bottom: 10px;
+  
+}.container {
     width: 521px;
     height: 781px;
     flex-shrink: 0;

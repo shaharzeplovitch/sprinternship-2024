@@ -1,1 +1,27 @@
-<p>single expereince component works too! </p>
+<section class="big-container">
+  <div class="user-profile">
+    <img src="./assets/user_blank.png" class="user-blank">
+    <h2 class="experience-name">{{ experience.authorFullName }}</h2>
+  </div>
+  <div class="experience-card">
+    <div class="experience-container">
+      <div class="experience-experience-container">
+        <div class="">
+          <div class="experience-star-rating">
+            <span *ngFor="let star of getStars(experience.overallRating)" class="star-filled">&#9733;</span>
+          </div>
+          <p class="experience-experience">{{ experience.message }}</p>
+        </div>
+        <div class="experience-feedback">
+          <p>Difficulty: {{ experience.difficultyRating }}.0</p>
+          <p>Benefits: {{ experience.benefitsRating }}.0</p>
+          <p>Work-life Balance: {{ experience.workLifeBalanceRating }}.0</p>
+          <p>Company Culture: {{ experience.companyCultureRating }}.0</p>
+        </div>
+        <div class="experience-helpful">
+          <p><b>100</b> people found this helpful</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
