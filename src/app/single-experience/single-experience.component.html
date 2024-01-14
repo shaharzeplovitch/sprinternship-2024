@@ -1,1 +1,25 @@
-<p>single expereince component works too! </p>
+<section class="big-container">
+  <div class="user-profile">
+    <img src="./assets/user_blank.png" class="user-blank">
+    <h2 class="experience-name">{{ experience.authorFullName }}</h2>
+  </div>
+  <div class="experience-card">
+    <div class="experience-container">
+      <div class="experience-experience-container">
+        <div class="">
+          <!-- <p class="experience-location">Location: {{ experience.location}}</p> -->
+          <!-- <p class="experience-rating">{{ experience.applicationProcess }}</p> -->
+          <p class="experience-experience">{{ experience.interviewExperience }}</p>
+        </div>
+        <div class="experience-feedback">
+          <p class="experience-">Received Offer: {{ experience.receivedOffer }}</p>
+          <p class="experience-">Accepted Offer: {{ experience.acceptedOffer }}</p>
+          <p class="experience-">Difficulty: {{ experience.isDifficult }}</p>
+        </div>
+        <div class="experience-helpful">
+          <p class=""><b>{{ experience.foundHelpfulCount }}</b> people found this helpful</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

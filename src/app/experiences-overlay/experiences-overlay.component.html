@@ -1,4 +1,6 @@
-<p>experiences-overlay works!</p>
+<!--Overlay-->
 
-
-<app-single-experience></app-single-experience>
+<!--List of experiences-->
+<div class="container-experience">
+    <app-single-experience *ngFor="let experience of experienceList" [experience]="experience"></app-single-experience>
+</div>
