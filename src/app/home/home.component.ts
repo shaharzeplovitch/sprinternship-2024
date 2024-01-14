@@ -31,8 +31,9 @@ export class HomeComponent {
     this.dataService.getAllCompanies().then((companiesList: Company[]) => {
       this.companiesList = companiesList;
     });
-    this.dataService.getAllExperiences().then((experienceList: Experience[]) => {
+    this.dataService.getExperiencesByJobId(1243).then((experienceList: Experience[]) => {
       this.experienceList = experienceList;
+      console.log(experienceList);
     });
   }
 }

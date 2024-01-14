@@ -55,7 +55,9 @@ export class DataService {
   }
 
   async getExperiencesByJobId(jobId: number): Promise<Experience[]> {
-    const experiencesUrl = `http://localhost:3000/expereiences?jobId=${jobId}`;
+    const pageNum = Math.floor(Math.random() * 10) + 1;
+    
+    const experiencesUrl = `http://localhost:3000/experiences?_page=${pageNum}&_limit=100`;
     const data = await fetch(experiencesUrl);
     return await data.json() ?? [];
   }
