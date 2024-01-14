@@ -47,6 +47,7 @@ select {
     height: 24px;
     border-radius: 5px;
     border: 1px solid rgba(204, 204, 204, 0.80);
+    background-color: white;
 }
 
 .dropdown-container {
@@ -166,3 +167,4 @@ select {
   /* color: #CCCCCCCC; */
   padding-bottom: 10px;
 }
+
