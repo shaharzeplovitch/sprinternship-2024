@@ -118,3 +118,8 @@ p {
   color: #ccc; /* Empty star color */
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
