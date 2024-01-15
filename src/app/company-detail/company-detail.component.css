@@ -1,13 +1,34 @@
-* {
-    box-sizing: border-box;
+.company-background {
+  position: relative;
+  width: 1160px;
+  height: 194px;
+  margin: 0 auto;
+  /* Center the element horizontally */
+}
+
+.company-background img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.logo {
+  width: 140px;
+  height: 140px;
+  bottom: 0;
+  left: 0;
+  margin-top: -55px;
+  margin-left: 55px;
+  object-fit: cover;
 }
 
 .container {
-    padding: 40px;
-    width: 800px;
-    flex-shrink: 0;
-    border-radius: 20px;
-    border: 1px solid rgba(204, 204, 204, 0.80);
-    background: #FFF;
-    color: #CCCCCCCC;
+  padding: 40px;
+  width: 700px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  border: 1px solid rgba(204, 204, 204, 0.80);
+  background: #FFF;
+  color: #CCCCCCCC;
+  margin-left: 55px;
 }
