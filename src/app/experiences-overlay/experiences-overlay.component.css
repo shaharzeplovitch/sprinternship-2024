@@ -160,13 +160,23 @@ select {
     text-align: center;
 }
 
+hr {
+    width: 400px;
+    height: 1px;
+    margin-bottom: 20px;
+    color: rgba(204, 204, 204, 0.80);
+    background:rgba(204, 204, 204, 0.80);
+    border-width: 0px;
+    height: 1px;
+    border-radius: 5px;
+}
 .container-experience {
     flex-shrink: 0;
     /* border: 1px solid rgba(204, 204, 204, 0.80); */
     /* color: #CCCCCCCC; */
     padding-bottom: 10px;
-    background-color: rgb(232, 232, 232);
-    border-top:1px solid #ccc;
+    /* background-color: rgb(232, 232, 232); */
+    /* border-top:1px solid #ccc; */
     height: 543px;
     overflow: auto;
 }
