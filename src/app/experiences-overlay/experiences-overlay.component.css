@@ -3,7 +3,7 @@
     height: 781px;
     flex-shrink: 0;
     border: 1px solid rgba(204, 204, 204, 0.80);
-    background: #EFEFF0;
+    background: #f5f5f5;
 }
 
 .margin {
@@ -165,6 +165,7 @@ select {
     /* border: 1px solid rgba(204, 204, 204, 0.80); */
     /* color: #CCCCCCCC; */
     padding-bottom: 10px;
+    background-color: rgb(232, 232, 232);
     border-top:1px solid #ccc;
     height: 543px;
     overflow: auto;
