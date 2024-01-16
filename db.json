@@ -3,7 +3,7 @@
     {
       "id": 0,
       "logoImageUrl": "assets/amazon.jpeg",
-      "backgroundImageUrl": "assests/background/amazon_cover.jpeg",
+      "backgroundImageUrl": "assets/background/amazon_cover.jpeg",
       "companyDetailLogo": "assets/company-logos/amazon_logo.jpeg",
       "name": "Amazon",
       "rating": 4,
@@ -19,7 +19,7 @@
     {
       "id": 1,
       "logoImageUrl": "assets/apple.webp",
-      "backgroundImageUrl": "assests/background/apple_cover.jpeg",
+      "backgroundImageUrl": "assets/background/apple_cover.jpeg",
       "companyDetailLogo": "assets/company-logos/apple_logo.jpeg",
       "name": "Apple",
       "rating": 4,
@@ -35,7 +35,7 @@
     {
       "id": 2,
       "logoImageUrl": "assets/microsoft.jpeg",
-      "backgroundImageUrl": "assests/background/microsoft_cover.jpeg",
+      "backgroundImageUrl": "assets/background/microsoft_cover.jpeg",
       "companyDetailLogo": "assets/company-logos/microsoft_logo.jpeg",
       "name": "Microsoft",
       "rating": 4,
@@ -51,7 +51,7 @@
     {
       "id": 3,
       "logoImageUrl": "assets/linkedin.png",
-      "backgroundImageUrl": "assests/background/linkedin_cover.jpeg",
+      "backgroundImageUrl": "assets/background/linkedin_cover.jpeg",
       "companyDetailLogo": "assets/company-logos/linkedin_logo.jpeg",
       "name": "LinkedIn",
       "rating": 4,
@@ -67,7 +67,7 @@
     {
       "id": 4,
       "logoImageUrl": "assets/facebook.png",
-      "backgroundImageUrl": "assests/background/meta_cover.jpeg",
+      "backgroundImageUrl": "assets/background/meta_cover.jpeg",
       "companyDetailLogo": "assets/company-logos/meta_logo.jpeg",
       "name": "Meta",
       "rating": 4,
