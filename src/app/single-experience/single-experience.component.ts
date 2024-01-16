@@ -20,4 +20,3 @@ export class SingleExperienceComponent {
     return Array.from({ length: overallRating }, (_, i) => i + 1);
   }
 }
-

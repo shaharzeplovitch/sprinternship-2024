@@ -160,6 +160,16 @@ select {
     text-align: center;
 }
 
+hr {
+    width: 400px;
+    height: 1px;
+    margin-bottom: 20px;
+    color: rgba(204, 204, 204, 0.80);
+    background:rgba(204, 204, 204, 0.80);
+    border-width: 0px;
+    height: 1px;
+    border-radius: 5px;
+}
 .container-experience {
     flex-shrink: 0;
     /* border: 1px solid rgba(204, 204, 204, 0.80); */
