@@ -11,6 +11,14 @@
   /* Center the element horizontally */
 }
 
+.company-background {
+  position: relative;
+  width: 1165px;
+  height: 192px;
+  margin: 0 auto;
+  /* Center the element horizontally */
+}
+
 .logo {
   width: 140px;
   height: 140px;
@@ -54,12 +62,42 @@
   text-align: right;
 }
 
+.company-name {
+  position: absolute;
+  width: 800px;
+  height: 39px;
+  font-family: "Inter-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 30px;
+  line-height: normal;
+  top: 137%;
+  left: 42%;
+  transform: translate(-50%, -50%);
+}
+
+.company-rating {
+  position: relative;
+  width: 800px;
+  height: 39px;
+  font-family: Inter, var(--default-font-family);
+  font-weight: 700;
+  color: #000000;
+  font-size: 30px;
+  line-height: normal;
+  top: 0px;
+  left: -15px;
+  transform: translate(-145px, 10px);
+  text-align: right;
+}
+
 .company-reviews {
   position: relative;
-  color: #0A66C2;
   width: 800px;
   height: 15px;
+  font-family: Inter, var(--default-font-family);
   font-weight: 800;
+  color: #0A66C2;
   font-size: 12px;
   line-height: 14.523px;
   top: -3px;
@@ -69,36 +107,36 @@
 }
 
 .company-bio {
-  position: relative;
-  color: #000000;
   width: 542px;
   height: 24px;
   font-size: 20px;
   font-weight: 400;
   line-height: 24px;
   margin: 0 auto;
+  color: #000000;
   text-align: center;
+  position: relative;
   top: 11px;
   left: 9px;
 }
 
 .searchbar {
-  position: relative;
   width: 616px;
   height: 32px;
   flex-shrink: 0;
   border-radius: 5px;
   border: 1px solid rgba(204, 204, 204, 0.80);
   background: white;
+  position: relative;
   top: 20px;
   left: 24px;
   margin: 0 auto;
 }
 
 .search-icon {
-  position: relative;
-  color: #000000;
   font-size: 24px;
+  color: #000000;
+  position: relative;
   top: -10px;
   left: 605px;
 }
