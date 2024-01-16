@@ -11,14 +11,6 @@
   /* Center the element horizontally */
 }
 
-.company-background {
-  position: relative;
-  width: 1165px;
-  height: 192px;
-  margin: 0 auto;
-  /* Center the element horizontally */
-}
-
 .logo {
   width: 140px;
   height: 140px;
@@ -44,7 +36,7 @@
   font-size: 30px;
   line-height: normal;
   top: 137%;
-  left: 42%;
+  left: 41.5%;
   transform: translate(-50%, -50%);
 }
 
@@ -54,35 +46,6 @@
   width: 800px;
   height: 39px;
   font-weight: 700;
-  font-size: 30px;
-  line-height: normal;
-  top: 0px;
-  left: -20px;
-  transform: translate(-145px, 10px);
-  text-align: right;
-}
-
-.company-name {
-  position: absolute;
-  width: 800px;
-  height: 39px;
-  font-family: "Inter-Bold", Helvetica;
-  font-weight: 700;
-  color: #000000;
-  font-size: 30px;
-  line-height: normal;
-  top: 137%;
-  left: 42%;
-  transform: translate(-50%, -50%);
-}
-
-.company-rating {
-  position: relative;
-  width: 800px;
-  height: 39px;
-  font-family: Inter, var(--default-font-family);
-  font-weight: 700;
-  color: #000000;
   font-size: 30px;
   line-height: normal;
   top: 0px;
@@ -114,10 +77,9 @@
   line-height: 24px;
   margin: 0 auto;
   color: #000000;
-  text-align: center;
   position: relative;
   top: 11px;
-  left: 9px;
+  left: 21px;
 }
 
 .searchbar {
@@ -129,7 +91,7 @@
   background: white;
   position: relative;
   top: 20px;
-  left: 24px;
+  left: 22px;
   margin: 0 auto;
 }
 
@@ -137,7 +99,7 @@
   font-size: 24px;
   color: #000000;
   position: relative;
-  top: -10px;
+  top: -8px;
   left: 605px;
 }
 
