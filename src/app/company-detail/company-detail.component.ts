@@ -5,11 +5,12 @@ import { Company } from '../interfaces/company';
 import { CommonModule } from '@angular/common';
 import { JobComponent } from '../job/job.component';
 import { Job } from '../interfaces/job';
+import { SingleExperienceComponent } from '../single-experience/single-experience.component';
 
 @Component({
   selector: 'app-company-detail',
   standalone: true,
-  imports: [SuggestedCompaniesComponent, CommonModule, JobComponent],
+  imports: [SuggestedCompaniesComponent, CommonModule, JobComponent, SingleExperienceComponent],
   templateUrl: './company-detail.component.html',
   styleUrl: './company-detail.component.css',
 })
@@ -34,6 +35,7 @@ export class CompanyDetailComponent {
   };
   companiesList: Company[] = [];
   companyJobs: Job[] = [];
+  suggestedCompanies: Company[] = [];
 
   constructor() {
     this.dataService
@@ -43,6 +45,10 @@ export class CompanyDetailComponent {
       });
     this.dataService.getJobsByCompanyId(0).then((companyJobs: Job[]) => {
       this.companyJobs = companyJobs;
+    });
+
+    this.dataService.getAllSuggestedCompanies().then((suggestedCompanies: Company[]) => {
+      this.suggestedCompanies = suggestedCompanies;
     });
   }
 }

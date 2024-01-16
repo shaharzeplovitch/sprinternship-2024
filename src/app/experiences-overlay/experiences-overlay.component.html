@@ -1,4 +1,34 @@
-<p>experiences-overlay works!</p>
+<div class="container">
+  <div class="margin">
+    <h1 class="heading">Interview & Job Experiences</h1>        
+    <img src="assets/search icon.png" alt="" class="search-icon">
+    <div class="filters">
 
-
-<app-single-experience></app-single-experience>
+      <input type="text" placeholder="         Search keywords" class="searchbar">
+      <div class="dropdown-container">
+        <h3 class="sort">Sort</h3>
+        <select class="sort-dropdown">
+          <option value="most-recent">Most recent</option>
+          <option value="Hi-lo">Highest to lowest</option>
+          <option value="lo-hi">Lowest to highest</option>
+          <option value="relevant">Most relevant</option>
+        </select>
+      </div>
+    </div>
+    <h3 class="people-often-mention">People often mention</h3>
+    <div class="attributes">
+      <button mat-stroked-button color="primary" class="trees">trees</button>
+      <button mat-stroked-button color="primary" class="data-structures">data structures</button>
+      <button mat-stroked-button color="primary" class="work">work-life balance</button>
+      <button mat-stroked-button color="primary" class="benefits">benefits</button>
+      <button mat-stroked-button color="primary" class="bonus">bonus</button>
+      <button mat-stroked-button color="primary" class="leetcode">leetcode</button>
+      <button mat-stroked-button color="primary" class="six">+6</button>
+    </div>
+    <br>
+  </div>
+  <!-- <div class="line"></div> -->
+  <div class="container-experience">
+    <app-single-experience *ngFor="let experience of experienceList" [experience]="experience"></app-single-experience>
+  </div>
+</div>
