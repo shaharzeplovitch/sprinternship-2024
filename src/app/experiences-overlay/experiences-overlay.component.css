@@ -74,90 +74,87 @@ select {
 }
 
 .trees {
-    border: 2px solid;
-    border-radius: 10px;
+    border: 2px solid #0A66C2 !important;
+    border-radius: 15px;
     background-color: white;
     color: #0A66C2;
-    width: 59px;
-    height: 25px;
-    padding-top: 4px;
     margin-right: 11px;
     margin-bottom: 5px;
+    font-size: 15px;
 }
 
 .data-structures {
-    border: 2px solid;
-    border-radius: 10px;
+    border: 2px solid #0A66C2 !important;
+    font-size: 15px;
+    border-radius: 15px;
     background-color: white;
     color: #0A66C2;
-    width: 141px;
-    height: 25px;
-    padding-top: 4px;
     margin-right: 11px;
     margin-bottom: 5px;
 }
 
 .work {
-    border: 2px solid;
-    border-radius: 10px;
+    border: 2px solid #0A66C2 !important;
+    font-size: 15px;
+    border-radius: 15px;
     background-color: white;
     color: #0A66C2;
-    width: 154px;
+    /* width: 154px;
     height: 25px;
-    padding-top: 4px;
+    padding-top: 4px; */
     margin-right: 11px;
     margin-bottom: 5px;
 }
 
 .benefits {
-    border: 2px solid;
-    border-radius: 10px;
-    background-color: white;
-    color: #0A66C2;
-    width: 82px;
+    border: 2px solid #0A66C2 !important;
+    font-size: 15px;
+    border-radius: 15px;
+    /* width: 82px;
     height: 25px;
-    padding-top: 4px;
+    padding-top: 4px; */
     margin-right: 11px;
 }
 
 .bonus {
-    border: 2px solid;
-    border-radius: 10px;
+    border: 2px solid #0A66C2 !important;
+    font-size: 15px;
+    border-radius: 15px;
     background-color: white;
     color: #0A66C2;
-    width: 71px;
+    /* width: 71px;
     height: 25px;
-    padding-top: 4px;
+    padding-top: 4px; */
     margin-right: 11px;
 }
 
 .leetcode {
-    border: 2px solid;
-    border-radius: 10px;
+    border: 2px solid #0A66C2 !important;
+    font-size: 15px;
+    border-radius: 15px;
     background-color: white;
     color: #0A66C2;
-    width: 80px;
+    /* width: 80px;
     height: 25px;
-    padding-top: 4px;
+    padding-top: 4px; */
     margin-right: 11px;
 }
 
 .six {
-    border: 2px solid;
-    border-radius: 10px;
+    border: 2px solid #0A66C2 !important;
+    font-size: 15px;
+    border-radius: 15px;
     background-color: white;
     color: #0A66C2;
-    width: 43px;
+    /* width: 43px;
     height: 25px;
-    padding-top: 4px;
+    padding-top: 4px; */
     margin-right: 11px;
-
 }
 
 .attributes {
     display: flex;
     flex-wrap: wrap;
-    text-align: center;
 }
 
 hr {
