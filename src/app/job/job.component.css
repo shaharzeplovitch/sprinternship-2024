@@ -19,8 +19,11 @@
 #job-text{
   font-size: 20px;
 }
+#description-text{
+  font-size: 14px;
+}
 .reviews{
   cursor: pointer;
   text-align: end;
-  color: var(--primary-color);
+  color: #0A66C2;
 }

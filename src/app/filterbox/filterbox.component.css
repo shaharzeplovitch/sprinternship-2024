@@ -7,6 +7,7 @@
     background: #FFF;
     position: relative;
     top: 70px;
+    margin-top: 20px;
 }
 hr{
     width: 192px;
@@ -23,7 +24,7 @@ hr{
     left: 10px;
 }
 .searchbar {
-    width: 281px;
+    width: 228px;
     height: 32px;
     flex-shrink: 0;
     border-radius: 5px;
@@ -31,6 +32,10 @@ hr{
     background: white;
     position: relative;
     top: -70px;
+}
+
+.searchbar-container{
+    right: 20px;
 }
 .headings {
     color: black;
@@ -123,3 +128,4 @@ hr{
 mat-slider {
     width: 95%;
 }
+

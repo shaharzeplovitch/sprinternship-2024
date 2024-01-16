@@ -21,12 +21,23 @@ button {
 
 .container {
   padding: 40px;
-  width: 800px;
+  width: 950px;
   flex-shrink: 0;
   border-radius: 20px;
   border: 1px solid rgba(204, 204, 204, 0.80);
   background: #FFF;
   color: #CCCCCCCC;
+  margin: 20px 40px 0 40px;
+}
+
+.container-experience {
+  width: 350px;
+  flex-shrink: 0; 
+  border-radius: 10px;
+  border: 1px solid rgba(204, 204, 204, 0.80);
+  background: #FFF;
+  color: #CCCCCCCC;
+  padding-bottom: 10px;
 }
 
 .heading {
@@ -57,4 +68,25 @@ button {
   width: 24px;
   height: 24px;
   flex-shrink: 0;
+}
+
+.parent-container {
+  display: flex;
+  justify-content: center;
+}
+
+.left-sidebar {
+  position: sticky;
+  top: 50px;
+  left: 20px;
+  display:inline-block;
+  margin-top: 100px;
+}
+
+.filterbox {
+  position: sticky;
+  top: 30px;
+  margin-top: 20px;
+  display:inline-block;
+  margin-right: 20px;
 }
