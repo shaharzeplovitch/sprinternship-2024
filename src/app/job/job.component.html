@@ -1,17 +1,13 @@
 <section class="job-card">
-    <i id="icon" class="fa-solid fa-square-poll-vertical fa-2x"></i>
+    <img id="icon"[src]="job.jobLogo">
 
-    <h2 id="job-text" class="job-title">Tiktok Data Analyst</h2>
-    <p id="attribute-text" class="job-duration">Full-time</p>
-    <p id="attribute-text" class="job-flexibility">Hybrid</p>
-    <p id="attribute-text" class="job-location">New York, NY</p><br>
-    <p id="description-text" class="job-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-        eiusmod tempor incididunt
-        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-        fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-        anim id est laborum.</p>
+    <h2 id="job-text" class="job-title">{{job.jobTitle}}</h2>
+    <p id="attribute-text" class="job-duration">{{job.contractType}}</p>
+    <p id="attribute-text" class="job-flexibility">{{job.employeeLocation}}</p>
+    <p id="attribute-text" class="job-location">{{job.location}}</p><br>
+    <p id="description-text" class="job-description">{{job.jobDescription}}</p>
     <div class="reviews">
-        <br><i id="review-icon" class="fa-regular fa-message fa-lg"></i> 124 Reviews
+        <br><i id="review-icon" class="fa-regular fa-message fa-lg"></i> 
+        {{job.reviews}} Reviews
     </div>
 </section>
