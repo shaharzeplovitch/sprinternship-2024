@@ -17,24 +17,7 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class CompanyDetailComponent {
   dataService: DataService = inject(DataService);
-  // selectedCompany: Company = {
-  //   backgroundImageUrl: 'assets/background/meta_cover.jpeg',
-  //   companyDetailLogo: 'assets/company-logos/meta_logo.jpeg',
-  //   companyReviews: 2456,
-  //   companySize: 86000,
-  //   competitors: 'Snap, Youtube, Twitter',
-  //   description:
-  //     'Meta builds technologies that help people connect, find communities, and grow businesses. When Facebook launched in 2004, it changed the way people connect. Apps like Messenger, Instagram and WhatsApp further empowered billions around the world. Now, Meta is moving beyond 2D screens toward immersive experiences like augmented and virtual reality to help build the next evolution in social technology.',
-  //   founded: '2004',
-  //   headquarters: 'Menlo Park, CA',
-  //   id: 4,
-  //   industry: 'Internet & Web Services',
-  //   isBookmarked: false,
-  //   logoImageUrl: 'assets/facebook.png',
-  //   name: 'Meta',
-  //   rating: 4,
-  // };
-
+  
   // arrays of Company objects
   companiesList: Company[] = [];
   companyJobs: Job[] = [];
@@ -42,7 +25,7 @@ export class CompanyDetailComponent {
   // specificCompany of Company object
   specificCompany: Company | undefined;
 
-  constructor(private route: ActivatedRoute) {}
+  constructor(private route: ActivatedRoute) { }
 
   ngOnInit(): void {
     let companyId: number = 0; // initialize default value
@@ -50,7 +33,6 @@ export class CompanyDetailComponent {
     this.route.params.subscribe((params) => {
       companyId = +params['id']; // Extract the id parameter from the route
     });
-
 
     this.dataService
       .getAllSuggestedCompanies()
@@ -68,13 +50,8 @@ export class CompanyDetailComponent {
       console.log(companyId); // testing if id attribute has been correctly passed from company component
     });
 
-
     this.dataService.getAllSuggestedCompanies().then((suggestedCompanies: Company[]) => {
       this.suggestedCompanies = suggestedCompanies;
     });
   }
-
-
-
-
 }
