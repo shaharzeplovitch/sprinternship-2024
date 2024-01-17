@@ -11,3 +11,8 @@ import { Job } from '../interfaces/job';
 export class JobComponent {
   @Input() job!: Job;
 }
+
+const btn = document.createElement('button');
+const button = document.createElement('button');
+button.textContent = 'Click me';
+document.body.appendChild(button);
