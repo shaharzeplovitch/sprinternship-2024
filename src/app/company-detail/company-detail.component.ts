@@ -63,9 +63,10 @@ export class CompanyDetailComponent {
       console.log(specificCompany); // testing if printing specific company attributes in console
     });
 
-    this.dataService.getJobsByCompanyId(0).then((companyJobs: Job[]) => {
+    this.dataService.getJobsByCompanyId(companyId).then((companyJobs: Job[]) => {
       this.companyJobs = companyJobs;
-    });
+      console.log(companyId); 
+  });
 
 
     this.dataService.getAllSuggestedCompanies().then((suggestedCompanies: Company[]) => {
