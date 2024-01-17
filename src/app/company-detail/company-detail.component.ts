@@ -17,7 +17,7 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class CompanyDetailComponent {
   dataService: DataService = inject(DataService);
-  
+
   // arrays of Company objects
   companiesList: Company[] = [];
   companyJobs: Job[] = [];
@@ -25,14 +25,8 @@ export class CompanyDetailComponent {
   // specificCompany of Company object
   specificCompany: Company | undefined;
 
-  constructor(private route: ActivatedRoute) { }
-
-  ngOnInit(): void {
-    let companyId: number = 0; // initialize default value
-
-    this.route.params.subscribe((params) => {
-      companyId = +params['id']; // Extract the id parameter from the route
-    });
+  constructor(private route: ActivatedRoute) { // Extract the id parameter from the route
+    const companyId = Number(this.route.snapshot.params['id']);
 
     this.dataService
       .getAllSuggestedCompanies()
@@ -42,12 +36,10 @@ export class CompanyDetailComponent {
 
     this.dataService.getCompanyById(companyId).then((specificCompany: Company) => {
       this.specificCompany = specificCompany;
-      console.log(specificCompany); // testing if printing specific company attributes in console
     });
 
     this.dataService.getJobsByCompanyId(companyId).then((companyJobs: Job[]) => {
       this.companyJobs = companyJobs;
-      console.log(companyId); // testing if id attribute has been correctly passed from company component
     });
 
     this.dataService.getAllSuggestedCompanies().then((suggestedCompanies: Company[]) => {
@@ -55,3 +47,6 @@ export class CompanyDetailComponent {
     });
   }
 }
+
+
+
