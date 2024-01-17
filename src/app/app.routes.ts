@@ -11,7 +11,7 @@ const routeConfig: Routes = [
     title: 'Home page'
   },
   {
-    path: 'company-detail',
+    path: 'company-detail/:id',
     component: CompanyDetailComponent,
     title: 'Detail Page'
   },

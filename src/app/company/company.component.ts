@@ -3,6 +3,7 @@ import { Router, RouterModule } from '@angular/router';
 import { Company } from '../interfaces/company';
 import { DataService } from '../services/data.service';
 import { CommonModule } from '@angular/common';
+import { Job } from '../interfaces/job';
 
 @Component({
   selector: 'app-company',
@@ -22,4 +23,9 @@ export class CompanyComponent {
   goToCompanyPage() {
     this.router.navigate(['/company', this.company.id]);
   }
+
+  navigateToCompanyPage(companyId: number): void {
+    this.router.navigate(['/company-detail', companyId]);
+  }
+
 }
