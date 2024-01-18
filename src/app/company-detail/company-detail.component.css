@@ -149,6 +149,7 @@
   display: grid;
   grid-template-columns: 58px 78px 618px 78px 393px 58px;
   grid-template-rows: 278px 34px 21px 14px 24px 15px 32px 17px 38px 1fr 33px;
+  justify-content: center;
 }
 
 .attributes-container {
