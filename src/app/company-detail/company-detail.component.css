@@ -8,6 +8,8 @@
   width: 1165px;
   height: 192px;
   margin: 0 auto;
+  grid-column-start: 2;
+
   /* Center the element horizontally */
 }
 
