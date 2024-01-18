@@ -33,7 +33,6 @@ export class HomeComponent {
     });
     this.dataService.getExperiencesByJobId(1243).then((experienceList: Experience[]) => {
       this.experienceList = experienceList;
-      console.log(experienceList);
     });
   }
 }

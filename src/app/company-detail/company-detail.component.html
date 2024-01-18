@@ -1,13 +1,13 @@
 <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
 <div class="parent-container">
   <div class="company-background">
-    <img class="element" [src]="selectedCompany.backgroundImageUrl" alt="Company Background Image" />
+    <img class="element" [src]="specificCompany?.backgroundImageUrl" alt="Company Background Image" />
     <div class="logo">
-      <img class="img" [src]="selectedCompany.companyDetailLogo" alt="Company Logo" />
-      <div class="company-name">{{selectedCompany.name}}</div>
-      <div class="company-rating">{{selectedCompany.rating | number: '1.1'}}<i class="fa-solid fa-star fa-xs"></i></div>
-      <div class="company-reviews">{{selectedCompany.companyReviews | number: '1.0' : 'en-US'}} company reviews</div>
-      <div class="company-bio">Find out what people are saying about {{selectedCompany.name}}’s interviews</div>
+      <img class="img" [src]="specificCompany?.companyDetailLogo" alt="Company Logo" />
+      <div class="company-name">{{specificCompany?.name}}</div>
+      <div class="company-rating">{{specificCompany?.rating | number: '1.1'}}<i class="fa-solid fa-star fa-xs"></i></div>
+      <div class="company-reviews">{{specificCompany?.companyReviews | number: '1.0' : 'en-US'}} company reviews</div>
+      <div class="company-bio">Find out what people are saying about {{specificCompany?.name}}’s interviews</div>
       <input type="text" placeholder="    Positions or type" class="searchbar" />
       <i class="fa-solid fa-magnifying-glass search-icon"></i>
       <div class="scrollbar">

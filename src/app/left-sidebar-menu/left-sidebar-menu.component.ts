@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { DataService } from '../services/data.service';
 
 @Component({
   selector: 'app-left-sidebar-menu',
@@ -8,5 +9,5 @@ import { Component } from '@angular/core';
   styleUrl: './left-sidebar-menu.component.css'
 })
 export class LeftSidebarMenuComponent {
-
+  dataService: DataService = inject(DataService);
 }

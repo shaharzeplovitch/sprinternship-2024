@@ -1,6 +1,5 @@
 import { Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
-import { NavbarComponent } from './navbar/navbar.component';
 import { ExperiencesOverlayComponent } from './experiences-overlay/experiences-overlay.component';
 import { CompanyDetailComponent } from './company-detail/company-detail.component';
 
@@ -11,7 +10,7 @@ const routeConfig: Routes = [
     title: 'Home page'
   },
   {
-    path: 'company-detail',
+    path: 'company-detail/:id',
     component: CompanyDetailComponent,
     title: 'Detail Page'
   },
