@@ -26,17 +26,17 @@ export class DataService {
   }
 
   async getJobById(jobId: number): Promise<Job> {
-    const data = await fetch(`${this.jobsUrl}/${jobId}`);
+    const data = await fetch(`${this.jobsUrl}${jobId}`);
     return await data.json() ?? {};
   }
 
   async getCompanyById(companyId: number): Promise<Company> {
-    const data = await fetch(`${this.companyUrl}/${companyId}`);
+    const data = await fetch(`${this.companyUrl}${companyId}`);
     return await data.json() ?? {};
   }
 
   async getExperienceById(convId: number): Promise<Experience> {
-    const data = await fetch(`${this.experiencesUrl}/${convId}`);
+    const data = await fetch(`${this.experiencesUrl}${convId}`);
     return await data.json() ?? {};
   }
 
