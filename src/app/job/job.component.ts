@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { Job } from '../interfaces/job';
 import { CommonModule } from '@angular/common';
 import { ExperiencesOverlayComponent } from '../experiences-overlay/experiences-overlay.component';
@@ -12,9 +12,9 @@ import { ExperiencesOverlayComponent } from '../experiences-overlay/experiences-
 })
 export class JobComponent {
   @Input() job!: Job;
-  showOverlay = false;
-  toggleOverlay(){
-    this.showOverlay = true;
+  @Output() showOverlayEmitter = new EventEmitter<void>();
+
+  onShowOverlay() {
+    this.showOverlayEmitter.emit();
   }
 }
-

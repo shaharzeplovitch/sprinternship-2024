@@ -10,7 +10,7 @@
     <input type="text" placeholder="    Positions or type" class="searchbar" />
     <i class="fa-solid fa-magnifying-glass search-icon"></i>
     <div class="job-container">
-      <app-job *ngFor="let job of companyJobs" [job]="job">
+      <app-job *ngFor="let job of companyJobs" [job]="job" (showOverlayEmitter)="onShowOverlay()">
       </app-job>
     </div>
   </div>
@@ -20,4 +20,7 @@
   <div class="company-card">
     <app-suggested-companies *ngFor="let company of companiesList" [company]="company"></app-suggested-companies>
   </div>
+</div>
+<div *ngIf="showOverlay" class="experiences-overlay-container">
+  <app-experiences-overlay></app-experiences-overlay>
 </div>

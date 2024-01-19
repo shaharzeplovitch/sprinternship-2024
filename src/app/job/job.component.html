@@ -7,12 +7,9 @@
     <p id="attribute-text" class="job-location">{{job.location}}</p><br>
     <p id="description-text" class="job-description">{{job.jobDescription}}</p>
     
-    <div class="reviews" (click)="toggleOverlay()">
+    <div class="reviews" (click)="onShowOverlay()">
         <br><i id="review-icon" class="fa-regular fa-message fa-lg"></i>
         {{job.reviews}} Reviews
     </div>
 </section>
-<div *ngIf="showOverlay">
-    <app-experiences-overlay></app-experiences-overlay>
-</div>
 
