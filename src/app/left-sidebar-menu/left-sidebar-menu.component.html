@@ -1,10 +1,10 @@
 <ul class="sidenav">
   <li class="sidenav-option selected">
     <a href="#dashboard"><i class="fas fa-house fa-xl"></i>Dashboard</a>
-  </li>
-  <li class="sidenav-option">
-    <a href="#saved"><i class="fas fa-bookmark fa-xl"></i> Saved</a>
-  </li>
+    <li class="sidenav-option">
+      <a href="#saved"><i class="fas fa-bookmark fa-xl"></i> Saved</a>
+      <span class="counter" *ngIf="savedCounter > 0">({{ savedCounter }})</span>
+    </li>
   <li class="sidenav-option">
     <a href="#services"><i class="fas fa-screwdriver-wrench fa-xl"></i>Services</a>
   </li>

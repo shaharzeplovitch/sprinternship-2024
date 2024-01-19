@@ -11,6 +11,8 @@ export class DataService {
   jobsUrl = 'http://localhost:3000/jobs/';
   experiencesUrl = 'http://localhost:3000/experiences/';
 
+  savedCompaniesSize = 1;
+
   // Returns a JSON list of all companies 
   async getAllCompanies(): Promise<Company[]> {
     const data = await fetch(this.companyUrl);
