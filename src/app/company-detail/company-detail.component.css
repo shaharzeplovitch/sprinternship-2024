@@ -178,10 +178,6 @@
   align-items: center;
 }
 
-.attr-value {
-
-}
-
 .attributes-heading {
   margin: 29px 29px 20px 29px;
   color: #000;
@@ -204,27 +200,3 @@
   line-height: normal;
   gap: 23px 40px;
 }
-/* 
-.remote-work {
-  margin: 0 46px 23px 10px;
-}
-
-.sign-on {
-  margin: 0 46px 23px 0;
-}
-
-.pto {
-  margin: 0 0 23px 0;
-}
-
-.parental-leave {
-  margin: 0 46px 23px 10px;
-}
-
-.sponsor {
-  margin: 0 46px 23px 0;
-}
-
-.stocks {
-  margin: 0 46px 23px 10px;
-} */
