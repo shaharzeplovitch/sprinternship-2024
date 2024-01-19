@@ -12,6 +12,7 @@
 
 .company-heading {
   color: var(--primary-color);
+  cursor: pointer;
 }
 
 .company-text {
