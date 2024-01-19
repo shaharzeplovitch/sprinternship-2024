@@ -2,6 +2,8 @@ import { Injectable } from '@angular/core';
 import { Company } from '../interfaces/company';
 import { Job } from '../interfaces/job';
 import { Experience } from '../interfaces/experience';
+import { Observable } from 'rxjs/internal/Observable';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
@@ -12,6 +14,7 @@ export class DataService {
   experiencesUrl = 'http://localhost:3000/experiences/';
   suggestedCompaniesUrl = 'http://localhost:3000/suggestedCompanies/';
 
+  showCompanyList = true;
   savedCompaniesSize = 4;
 
   // Returns a JSON list of all companies 

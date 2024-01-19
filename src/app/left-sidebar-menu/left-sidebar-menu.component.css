@@ -48,6 +48,6 @@ li {
   list-style: none;
 }
 
-.selected a {
+.sidenav .active {
   color: #0A66C2;
-}
+} 

@@ -10,4 +10,15 @@ import { DataService } from '../services/data.service';
 })
 export class LeftSidebarMenuComponent {
   dataService: DataService = inject(DataService);
+
+  active: boolean = true;
+
+  toSavedCompanies(){
+    this.dataService.showCompanyList = false;
+    this.active = this.dataService.showCompanyList;
+  }
+  toExploreCompanies(){
+    this.dataService.showCompanyList = true;
+    this.active = this.dataService.showCompanyList;
+  }
 }

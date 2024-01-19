@@ -19,7 +19,15 @@ export class CompanyComponent {
   dataService: DataService = inject(DataService);
   router: Router = inject(Router);
 
+  active: boolean = true;
+
   navigateToCompanyPage(companyId: number): void {
     this.router.navigate(['/company-detail', companyId]);
   }
+
+  bookmarkToggle(){
+    this.active = !this.active;
+
+  }
+ 
 }
