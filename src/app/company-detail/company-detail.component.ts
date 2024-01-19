@@ -18,6 +18,7 @@ import { ExperiencesOverlayComponent } from '../experiences-overlay/experiences-
 })
 export class CompanyDetailComponent {
   dataService: DataService = inject(DataService);
+  attributes = ["Remote work","Sign-on bonus","Unlimited PTO", "Paid parental leave", "Sponsorships", "Stock options"];
 
   // arrays of Company objects
   companiesList: Company[] = [];
