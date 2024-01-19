@@ -5,7 +5,8 @@
     <div class="logo">
       <img class="img" [src]="specificCompany?.companyDetailLogo" alt="Company Logo" />
       <div class="company-name">{{specificCompany?.name}}</div>
-      <div class="company-rating">{{specificCompany?.rating | number: '1.1'}}<i class="fa-solid fa-star fa-xs"></i></div>
+      <div class="company-rating">{{specificCompany?.rating | number: '1.1'}}<i class="fa-solid fa-star fa-xs"></i>
+      </div>
       <div class="company-reviews">{{specificCompany?.companyReviews | number: '1.0' : 'en-US'}} company reviews</div>
       <div class="company-bio">Find out what people are saying about {{specificCompany?.name}}’s interviews</div>
       <input type="text" placeholder="    Positions or type" class="searchbar" />
@@ -21,13 +22,11 @@
   <div class="attributes-container">
     <h3 class="attributes-heading">Attributes</h3>
     <div class="attributes-format">
-    <h4 class="remote-work">Remote work</h4>
-    <h4 class="sign-on">Sign-on bonus</h4>
-    <h4 class="pto">Unlimited PTO</h4>
-    <h4 class="parental-leave">Paid parental leave</h4>
-    <h4 class="sponsor">Sponsorships</h4>
-    <h4 class="stocks">Stock options</h4>
-  </div>
+      <div *ngFor="let attr of attributes" class="attribute-container">
+        <i class="fa-solid fa-check"></i>
+        <h4 class="attr-value">{{attr}}</h4>
+      </div>
+    </div>
   </div>
   <div class="container-suggested">
     <h1 class="heading-suggested">Suggested Companies</h1>

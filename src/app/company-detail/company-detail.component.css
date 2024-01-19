@@ -9,8 +9,13 @@
   height: 192px;
   margin: 0 auto;
   grid-column-start: 2;
+  grid-column-end: 6;
 
   /* Center the element horizontally */
+}
+
+.element {
+  width: 100%;
 }
 
 .logo {
@@ -21,6 +26,7 @@
   margin-top: -106px;
   margin-left: 62px;
   font-family: Inter, var(--default-font-family);
+  
 }
 
 .img {
@@ -148,7 +154,7 @@
 .parent-container {
   display: grid;
   grid-template-columns: 58px 78px 618px 78px 393px 58px;
-  grid-template-rows: 278px 34px 21px 14px 24px 15px 32px 17px 38px 1fr 33px;
+  grid-template-rows: 225px 34px 21px 14px 24px 15px 32px 17px 38px 1fr 33px;
   justify-content: center;
 }
 
@@ -162,6 +168,18 @@
   grid-column-start: 5;
   grid-column-end: 6;
   grid-row-start: 2;
+}
+
+.attribute-container {
+  display: flex;
+  justify-content: space-between;
+  width: max-content;
+  column-gap: 5px;
+  align-items: center;
+}
+
+.attr-value {
+
 }
 
 .attributes-heading {
@@ -184,8 +202,9 @@
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+  gap: 23px 40px;
 }
-
+/* 
 .remote-work {
   margin: 0 46px 23px 10px;
 }
@@ -208,4 +227,4 @@
 
 .stocks {
   margin: 0 46px 23px 10px;
-}
+} */
