@@ -13,7 +13,7 @@
       <i class="fa-solid fa-magnifying-glass search-icon"></i>
       <div class="scrollbar">
         <div class="job-container">
-          <app-job *ngFor="let job of companyJobs" [job]="job">
+          <app-job *ngFor="let job of companyJobs" [job]="job" (showOverlayEmitter)="onShowOverlay()">
           </app-job>
         </div>
       </div>
