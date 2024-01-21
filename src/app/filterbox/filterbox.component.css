@@ -24,6 +24,12 @@ hr{
     left: 10px;
 }
 .searchbar {
+    outline: none;
+    border: none;
+}
+
+.searchbar-container{
+    /* right: 20px; */
     width: 228px;
     height: 32px;
     flex-shrink: 0;
@@ -32,10 +38,6 @@ hr{
     background: white;
     position: relative;
     top: -70px;
-}
-
-.searchbar-container{
-    right: 20px;
 }
 .headings {
     color: black;
