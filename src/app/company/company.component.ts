@@ -19,8 +19,6 @@ export class CompanyComponent {
   dataService: DataService = inject(DataService);
   router: Router = inject(Router);
 
-  active: boolean = true;
-
   navigateToCompanyPage(companyId: number): void {
     this.router.navigate(['/company-detail', companyId]);
   }
@@ -30,21 +28,13 @@ export class CompanyComponent {
     if (this.company.isBookmarked) {
       this.dataService.savedCompaniesSize--;
     }
-
-    if (!this.active) { // unsaving company
-      this.dataService.savedCompaniesSize--;
-      this.company.isBookmarked = false;
-    }
-    else { // saving company
+    else { 
       this.dataService.savedCompaniesSize++;
-      this.company.isBookmarked = true;
     }
-    console.log(this.company.isBookmarked);
-    console.log(this.dataService.savedCompaniesSize);
-
     this.dataService.updateCompanyCounter(this.company.id, this.company).then(res => {
-      this.active = !this.active;
+      this.company.isBookmarked = !this.company.isBookmarked;
+      console.log(this.company.isBookmarked);
+    console.log(this.dataService.savedCompaniesSize);
     });
   }
-
 }
