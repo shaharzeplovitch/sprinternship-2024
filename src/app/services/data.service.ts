@@ -2,6 +2,8 @@ import { Injectable } from '@angular/core';
 import { Company } from '../interfaces/company';
 import { Job } from '../interfaces/job';
 import { Experience } from '../interfaces/experience';
+import { Observable } from 'rxjs/internal/Observable';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
@@ -12,7 +14,26 @@ export class DataService {
   experiencesUrl = 'http://localhost:3000/experiences/';
   suggestedCompaniesUrl = 'http://localhost:3000/suggestedCompanies/';
 
-  savedCounter = 4;
+  showCompanyList = true;
+  savedCompaniesSize = 0;
+
+  companiesList: Company[] =  []; 
+  savedCompanies: Company[] = [];
+
+  updateSavedCompanies() {
+    this.savedCompanies = this.companiesList.filter(comp => comp.isBookmarked);
+  }
+
+  async updateCompanyCounter(companyId: number, newData: Company): Promise<Company> {
+    const data = await fetch(this.companyUrl + companyId.toString(), {
+      method: 'PUT',
+      body: JSON.stringify(newData),
+      headers: { 'Content-Type': 'application/json' }
+    });
+
+    return data.json() ?? {};
+  }
+
 
   // Returns a JSON list of all companies 
   async getAllCompanies(): Promise<Company[]> {

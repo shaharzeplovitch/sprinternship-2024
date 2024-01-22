@@ -2,7 +2,12 @@
   <img class="company-photo" [src]="company.logoImageUrl" alt="Exterior photo of {{company.name}}">
   <div class="company-container">
     <h2 class="company-heading" (click)="navigateToCompanyPage(company.id)">{{ company.name }}</h2>
-    <img src="./assets/Bookmark.png" class="bookmark-icon">
+    <!-- <span class="bookmark-icon">
+      <i class="fa-solid fa-bookmark"></i>
+    </span> -->
+    <span (click)="bookmarkToggle()" [class.active]="company.isBookmarked" class="bookmark-icon">
+      <i class="fa-solid fa-bookmark"></i>
+    </span>
   </div>
   <p class="company-location">{{ company.headquarters}}</p>
   <p class="company-rating"><b>Rating: </b>{{ company.rating | number: '1.1'}}</p>

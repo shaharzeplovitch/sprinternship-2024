@@ -22,4 +22,15 @@ export class CompanyComponent {
   navigateToCompanyPage(companyId: number): void {
     this.router.navigate(['/company-detail', companyId]);
   }
+
+  bookmarkToggle() {
+    if (this.company.isBookmarked) this.dataService.savedCompaniesSize--;
+    else this.dataService.savedCompaniesSize++;
+    
+    this.company.isBookmarked = !this.company.isBookmarked;
+
+    this.dataService.updateCompanyCounter(this.company.id, this.company).then(res => {
+      this.dataService.updateSavedCompanies();
+    });
+  }
 }

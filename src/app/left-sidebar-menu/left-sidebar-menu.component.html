@@ -1,15 +1,16 @@
 <ul class="sidenav">
-  <li class="sidenav-option selected">
-    <a href="#dashboard"><i class="fas fa-house fa-xl"></i>Dashboard</a>
+  <li (click)="toExploreCompanies()">
+    <a href="#dashboard" [class.active]="selectedMenuItem === 'home'"><i class="fas fa-house fa-xl"></i>Dashboard</a>
+  </li>
+  <li class="sidenav-option" (click)="toSavedCompanies()">
+    <a href="#saved" [class.active]="selectedMenuItem === 'saved'"><i class="fas fa-bookmark fa-xl"></i> Saved</a>
+    <span class="counter" *ngIf="dataService.savedCompaniesSize > 0" [class.active]="selectedMenuItem === 'saved'">({{
+      dataService.savedCompaniesSize }})</span>
   </li>
   <li class="sidenav-option">
-    <a href="#saved"><i class="fas fa-bookmark fa-xl"></i> Saved</a>
-    <span class="counter" *ngIf="dataService.savedCounter > 0">({{ dataService.savedCounter }})</span>
+    <a><i class="fas fa-screwdriver-wrench fa-xl"></i>Services</a>
   </li>
   <li class="sidenav-option">
-    <a href="#services"><i class="fas fa-screwdriver-wrench fa-xl"></i>Services</a>
-  </li>
-  <li class="sidenav-option">
-    <a href="#settings"><i class="fas fa-gear fa-xl"></i>Settings</a>
+    <a><i class="fas fa-gear fa-xl"></i>Settings</a>
   </li>
 </ul>

@@ -3,14 +3,26 @@
   <div>
     <app-left-sidebar-menu class="left-sidebar"></app-left-sidebar-menu>
   </div>
-  <div class="container">
+  <!--Explore Companies-->
+  <div class="container" *ngIf="dataService.showCompanyList">
     <h1 class="heading">Explore Companies</h1>
     <p class="subtitle">Based on your profile and search history</p>
     <div class="company-card">
-      <app-company *ngFor="let company of companiesList" [company]="company">
+      <app-company *ngFor="let company of dataService.companiesList" [company]="company">
       </app-company>
     </div>
   </div>
+
+  <!--Saved Companies-->
+  <div class="container" *ngIf="!dataService.showCompanyList">
+    <h1 class="heading">Saved Companies</h1>
+    <p class="subtitle">A list of companies you've saved</p>
+    <div class="company-card">
+      <app-company *ngFor="let company of dataService.savedCompanies" [company]="company">
+      </app-company>
+    </div>
+  </div>
+
   <div>
     <app-filterbox class="filterbox"></app-filterbox>
   </div>

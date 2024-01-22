@@ -41,8 +41,13 @@
 
 .bookmark-icon {
   cursor: pointer;
-  width: 24px;
-  height: 24px;
+  font-size: 24px;
+  color: rgb(179, 179, 179);
+}
+
+.active {
+  cursor: pointer;
+  color: rgb(0, 57, 170);
 }
 
 .company-container {
