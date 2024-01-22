@@ -22,6 +22,7 @@
   height: 450px;
   flex-shrink: 0;
   overflow: scroll;
+  overflow-x: hidden;
   scrollbar-width: 10px;
   scroll-behavior: auto;
 }
