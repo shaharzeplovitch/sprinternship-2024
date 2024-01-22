@@ -10,14 +10,5 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./left-sidebar-menu.component.css']
 })
 export class LeftSidebarMenuComponent {
-  savedCounter: number = 0;
   dataService: DataService = inject(DataService); // Assuming inject is used for dependency injection
-
-  constructor() {
-    this.updateSavedCounter();
-  }
-
-  updateSavedCounter() {
-    this.savedCounter = this.dataService.savedCounter;
-  }
 }
