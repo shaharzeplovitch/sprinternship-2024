@@ -2,8 +2,9 @@
   <li (click)="toExploreCompanies()">
     <a href="#dashboard" [class.active]="active"><i class="fas fa-house fa-xl"></i>Dashboard</a>
   </li>
-  <li (click)="toSavedCompanies()">
-    <a href="#saved" [class.active]="!active"><i class="fas fa-bookmark fa-xl"></i>Saved</a>
+  <li class="sidenav-option">
+    <a href="#saved"><i class="fas fa-bookmark fa-xl"></i> Saved</a>
+    <span class="counter" *ngIf="dataService.savedCounter > 0">({{ dataService.savedCounter }})</span>
   </li>
   <li class="sidenav-option">
     <a><i class="fas fa-screwdriver-wrench fa-xl"></i>Services</a>

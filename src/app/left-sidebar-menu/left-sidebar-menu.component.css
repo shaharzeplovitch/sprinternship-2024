@@ -50,4 +50,15 @@ li {
 
 .sidenav .active {
   color: #0A66C2;
-} 
+}
+
+.counter {
+  color: #B1B1B1; 
+  font-size: 18px;
+  margin-left: 5px;
+  font-family: Inter;
+}
+
+.sidenav-option.selected .counter {
+  display: inline;
+}

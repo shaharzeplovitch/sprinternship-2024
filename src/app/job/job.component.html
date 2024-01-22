@@ -1,13 +1,15 @@
 <section class="job-card">
-    <img id="icon"[src]="job.jobLogo">
+    <img id="icon" [src]="job.jobLogo">
 
     <h2 id="job-text" class="job-title">{{job.jobTitle}}</h2>
     <p id="attribute-text" class="job-duration">{{job.contractType}}</p>
     <p id="attribute-text" class="job-flexibility">{{job.employeeLocation}}</p>
     <p id="attribute-text" class="job-location">{{job.location}}</p><br>
     <p id="description-text" class="job-description">{{job.jobDescription}}</p>
-    <div class="reviews">
-        <br><i id="review-icon" class="fa-regular fa-message fa-lg"></i> 
+    
+    <div class="reviews" (click)="onShowOverlay()">
+        <br><i id="review-icon" class="fa-regular fa-message fa-lg"></i>
         {{job.reviews}} Reviews
     </div>
 </section>
+

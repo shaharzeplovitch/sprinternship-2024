@@ -1,23 +1,40 @@
 <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
-<div class="company-background">
-  <img class="element" [src]="specificCompany?.backgroundImageUrl" alt="Company Background Image" />
-  <div class="logo">
-    <img class="img" [src]="specificCompany?.companyDetailLogo" alt="Company Logo" />
-    <div class="company-name">{{specificCompany?.name}}</div>
-    <div class="company-rating">{{specificCompany?.rating | number: '1.1'}}<i class="fa-solid fa-star fa-xs"></i></div>
-    <div class="company-reviews">{{specificCompany?.companyReviews | number: '1.0' : 'en-US'}} company reviews</div>
-    <div class="company-bio">Find out what people are saying about {{specificCompany?.name}}’s interviews</div>
-    <input type="text" placeholder="    Positions or type" class="searchbar" />
-    <i class="fa-solid fa-magnifying-glass search-icon"></i>
-    <div class="job-container">
-      <app-job *ngFor="let job of companyJobs" [job]="job">
-      </app-job>
+<div class="parent-container">
+  <div class="company-background">
+    <img class="element" [src]="specificCompany?.backgroundImageUrl" alt="Company Background Image" />
+    <div class="logo">
+      <img class="img" [src]="specificCompany?.companyDetailLogo" alt="Company Logo" />
+      <div class="company-name">{{specificCompany?.name}}</div>
+      <div class="company-rating">{{specificCompany?.rating | number: '1.1'}}<i class="fa-solid fa-star fa-xs"></i>
+      </div>
+      <div class="company-reviews" (click)="onShowOverlay()">{{specificCompany?.companyReviews | number: '1.0' : 'en-US'}} company reviews</div>
+      <div class="company-bio">Find out what people are saying about {{specificCompany?.name}}’s interviews</div>
+      <input type="text" placeholder="    Positions or type" class="searchbar" />
+      <i class="fa-solid fa-magnifying-glass search-icon"></i>
+      <div class="scrollbar">
+        <div class="job-container">
+          <app-job *ngFor="let job of companyJobs" [job]="job" (showOverlayEmitter)="onShowOverlay()">
+          </app-job>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="attributes-container">
+    <h3 class="attributes-heading">Attributes</h3>
+    <div class="attributes-format">
+      <div *ngFor="let attr of attributes" class="attribute-container">
+        <i class="fa-solid fa-check"></i>
+        <h4>{{attr}}</h4>
+      </div>
+    </div>
+  </div>
+  <div class="container-suggested">
+    <h1 class="heading-suggested">Suggested Companies</h1>
+    <div class="company-card">
+      <app-suggested-companies *ngFor="let company of companiesList" [company]="company"></app-suggested-companies>
     </div>
   </div>
 </div>
-<div class="container-suggested">
-  <h1 class="heading-suggested">Suggested Companies</h1>
-  <div class="company-card">
-    <app-suggested-companies *ngFor="let company of companiesList" [company]="company"></app-suggested-companies>
-  </div>
+<div *ngIf="showOverlay" class="experiences-overlay-container">
+  <app-experiences-overlay></app-experiences-overlay>
 </div>
