@@ -30,6 +30,7 @@ export class HomeComponent {
     this.dataService.getAllCompanies().then((companiesList: Company[]) => {
       this.dataService.companiesList = companiesList;
       this.dataService.savedCompanies = companiesList.filter(company => company.isBookmarked === true);
+      this.dataService.savedCompaniesSize = this.dataService.savedCompanies.length;
     });
     this.dataService.getExperiencesByJobId(1243).then((experienceList: Experience[]) => {
       this.experienceList = experienceList;
