@@ -26,6 +26,11 @@ export class CompanyComponent {
   }
 
   bookmarkToggle() {
+
+    if (this.company.isBookmarked) {
+      this.dataService.savedCompaniesSize--;
+    }
+
     if (!this.active) { // unsaving company
       this.dataService.savedCompaniesSize--;
       this.company.isBookmarked = false;
@@ -36,10 +41,10 @@ export class CompanyComponent {
     }
     console.log(this.company.isBookmarked);
     console.log(this.dataService.savedCompaniesSize);
-    this.active = !this.active;
 
-
-
+    this.dataService.updateCompanyCounter(this.company.id, this.company).then(res => {
+      this.active = !this.active;
+    });
   }
 
 }
