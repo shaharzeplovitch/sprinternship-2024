@@ -82,6 +82,7 @@
   left: 29px;
   transform: translate(-145px, 10px);
   text-align: right;
+  cursor: pointer;
 }
 
 .company-bio {
