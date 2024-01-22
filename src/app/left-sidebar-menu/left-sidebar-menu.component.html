@@ -4,7 +4,8 @@
   </li>
   <li class="sidenav-option" (click)="toSavedCompanies()">
     <a href="#saved" [class.active]="selectedMenuItem === 'saved'"><i class="fas fa-bookmark fa-xl"></i> Saved</a>
-    <span class="counter" *ngIf="dataService.savedCompaniesSize > 0">({{ dataService.savedCompaniesSize }})</span>
+    <span class="counter" *ngIf="dataService.savedCompaniesSize > 0" [class.active]="selectedMenuItem === 'saved'">({{
+      dataService.savedCompaniesSize }})</span>
   </li>
   <li class="sidenav-option">
     <a><i class="fas fa-screwdriver-wrench fa-xl"></i>Services</a>
