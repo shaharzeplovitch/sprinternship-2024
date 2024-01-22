@@ -15,13 +15,8 @@ import {MatButtonModule} from '@angular/material/button';
 export class ExperiencesOverlayComponent implements OnInit{
   dataService: DataService = inject(DataService);
   experienceList: Experience[] = [];
-  
-  constructor() {
-    console.log("hello world")
-  }
 
   ngOnInit(){
-    console.log("here");
     this.dataService.getExperiencesByJobId(123).then((experienceList: Experience[]) => {
       this.experienceList = experienceList;
     });
