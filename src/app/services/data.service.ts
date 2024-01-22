@@ -17,11 +17,12 @@ export class DataService {
   showCompanyList = true;
   savedCompaniesSize = 0;
 
-  // constructor(private http: HttpClient) {}
+  companiesList: Company[] =  []; 
+  savedCompanies: Company[] = [];
 
-  // getJsonData(): Observable<any> {
-  //   return this.http.get<any>(this.companyUrl);
-  // }
+  updateSavedCompanies() {
+    this.savedCompanies = this.companiesList.filter(comp => comp.isBookmarked);
+  }
 
   async updateCompanyCounter(companyId: number, newData: Company): Promise<Company> {
     const data = await fetch(this.companyUrl + companyId.toString(), {

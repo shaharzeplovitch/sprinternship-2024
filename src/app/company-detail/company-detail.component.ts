@@ -20,8 +20,6 @@ export class CompanyDetailComponent {
   dataService: DataService = inject(DataService);
   attributes = ["Remote work","Sign-on bonus","Unlimited PTO", "Paid parental leave", "Sponsorships", "Stock options"];
 
-  // arrays of Company objects
-  companiesList: Company[] = [];
   companyJobs: Job[] = [];
   suggestedCompanies: Company[] = [];
   // specificCompany of Company object
@@ -31,12 +29,6 @@ export class CompanyDetailComponent {
 
   constructor(private route: ActivatedRoute) { // Extract the id parameter from the route
     const companyId = Number(this.route.snapshot.params['id']);
-
-    this.dataService
-      .getAllSuggestedCompanies()
-      .then((companiesList: Company[]) => {
-        this.companiesList = companiesList;
-      });
 
     this.dataService.getCompanyById(companyId).then((specificCompany: Company) => {
       this.specificCompany = specificCompany;

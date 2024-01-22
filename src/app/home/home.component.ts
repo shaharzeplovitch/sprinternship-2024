@@ -24,16 +24,12 @@ import { SingleExperienceComponent } from '../single-experience/single-experienc
 })
 export class HomeComponent {
   dataService: DataService = inject(DataService);
-  companiesList: Company[] = [];
-  companiesListSaved: Company[] = [];
   experienceList: Experience[] = [];
 
   constructor() {
     this.dataService.getAllCompanies().then((companiesList: Company[]) => {
-      this.companiesList = companiesList;
-    });
-    this.dataService.getAllCompanies().then((companiesListSaved: Company[]) => {
-      this.companiesListSaved = companiesListSaved.filter(company => company.isBookmarked === true);
+      this.dataService.companiesList = companiesList;
+      this.dataService.savedCompanies = companiesList.filter(company => company.isBookmarked === true);
     });
     this.dataService.getExperiencesByJobId(1243).then((experienceList: Experience[]) => {
       this.experienceList = experienceList;

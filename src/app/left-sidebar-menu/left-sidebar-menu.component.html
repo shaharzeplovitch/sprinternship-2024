@@ -1,9 +1,9 @@
 <ul class="sidenav">
   <li (click)="toExploreCompanies()">
-    <a href="#dashboard" [class.active]="active"><i class="fas fa-house fa-xl"></i>Dashboard</a>
+    <a href="#dashboard" [class.active]="selectedMenuItem === 'home'"><i class="fas fa-house fa-xl"></i>Dashboard</a>
   </li>
-  <li class="sidenav-option">
-    <a href="#saved"><i class="fas fa-bookmark fa-xl"></i> Saved</a>
+  <li class="sidenav-option" (click)="toSavedCompanies()">
+    <a href="#saved" [class.active]="selectedMenuItem === 'saved'"><i class="fas fa-bookmark fa-xl"></i> Saved</a>
     <span class="counter" *ngIf="dataService.savedCompaniesSize > 0">({{ dataService.savedCompaniesSize }})</span>
   </li>
   <li class="sidenav-option">

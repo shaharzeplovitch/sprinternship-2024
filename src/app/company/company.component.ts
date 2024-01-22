@@ -24,17 +24,12 @@ export class CompanyComponent {
   }
 
   bookmarkToggle() {
+    if (this.company.isBookmarked) this.dataService.savedCompaniesSize--;
+    else this.dataService.savedCompaniesSize++;
 
-    if (this.company.isBookmarked) {
-      this.dataService.savedCompaniesSize--;
-    }
-    else { 
-      this.dataService.savedCompaniesSize++;
-    }
     this.dataService.updateCompanyCounter(this.company.id, this.company).then(res => {
       this.company.isBookmarked = !this.company.isBookmarked;
-      console.log(this.company.isBookmarked);
-    console.log(this.dataService.savedCompaniesSize);
+      this.dataService.updateSavedCompanies();
     });
   }
 }

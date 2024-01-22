@@ -11,15 +11,17 @@ import { CommonModule } from '@angular/common';
 })
 export class LeftSidebarMenuComponent {
   dataService: DataService = inject(DataService);
-
-  active: boolean = true;
+  selectedMenuItem = 'home';
 
   toSavedCompanies(){
     this.dataService.showCompanyList = false;
-    this.active = this.dataService.showCompanyList;
+    this.selectedMenuItem = 'saved';
+    this.dataService.updateSavedCompanies();
   }
+  
   toExploreCompanies(){
     this.dataService.showCompanyList = true;
-    this.active = this.dataService.showCompanyList;
+    this.selectedMenuItem = 'home';
+    this.dataService.updateSavedCompanies();
   }
 }
