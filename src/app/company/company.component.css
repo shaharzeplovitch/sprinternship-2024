@@ -33,6 +33,7 @@
   background: lightgray 0px 0px / 100% 100% no-repeat, #FFF;
   padding: 20px;
   position: relative;
+  cursor: pointer;
 }
 
 .company-location::before {
