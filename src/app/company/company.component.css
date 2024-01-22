@@ -11,7 +11,7 @@
 }
 
 .company-heading {
-  color: var(--primary-color);
+  color: black;
   cursor: pointer;
 }
 
@@ -40,6 +40,10 @@
   content: url("/assets/location-pin.svg") / "";
 }
 
+.company-location {
+  display: flex;
+  align-items: center;
+}
 .bookmark-icon {
   cursor: pointer;
   font-size: 24px;

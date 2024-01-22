@@ -18,12 +18,15 @@ hr{
     border-width: 0px;
     height: 1px;
 }
-.search {
-    position: relative;
-    top: -95px;
-    left: 10px;
-}
+
 .searchbar {
+    outline: none;
+    border: none;
+    width: 100%;
+}
+.searchbar-container{
+    display: flex;
+    align-items: center;
     width: 228px;
     height: 32px;
     flex-shrink: 0;
@@ -34,8 +37,11 @@ hr{
     top: -70px;
 }
 
-.searchbar-container{
-    right: 20px;
+.search {
+    width: 15px;
+    height: 15px;
+    margin-left: 10px;
+    margin-right: 5px;
 }
 .headings {
     color: black;
@@ -44,24 +50,12 @@ hr{
     font-weight:400;
 }
 .filter {
-    margin-top: -35px;
+    margin-top: -15px;
     margin-bottom: 10px;
     font-weight: 700;
     font-size: 20px;
 }
-/* .company-size {
-    font-weight: 600;
-    margin-bottom: 20px;
-}
-.rating{
-    font-weight: 600;
-}
-.industry-size{
-    font-weight: 600;
-}
-.location{
-    font-weight: 600;
-} */
+
 .filter-headers {
     font-size: 15px;
     font-weight: 500;
