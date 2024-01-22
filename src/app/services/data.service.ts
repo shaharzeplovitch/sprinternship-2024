@@ -15,7 +15,17 @@ export class DataService {
   suggestedCompaniesUrl = 'http://localhost:3000/suggestedCompanies/';
 
   showCompanyList = true;
-  savedCompaniesSize = 4;
+  savedCompaniesSize = 0;
+
+  // constructor(private http: HttpClient) {}
+
+  // getJsonData(): Observable<any> {
+  //   return this.http.get<any>(this.companyUrl);
+  // }
+
+  // updateJsonData(newData: any): Observable<any> {
+  //   return this.http.put<any>(this.companyUrl, newData);
+  // }
 
   // Returns a JSON list of all companies 
   async getAllCompanies(): Promise<Company[]> {

@@ -25,9 +25,21 @@ export class CompanyComponent {
     this.router.navigate(['/company-detail', companyId]);
   }
 
-  bookmarkToggle(){
+  bookmarkToggle() {
+    if (!this.active) { // unsaving company
+      this.dataService.savedCompaniesSize--;
+      this.company.isBookmarked = false;
+    }
+    else { // saving company
+      this.dataService.savedCompaniesSize++;
+      this.company.isBookmarked = true;
+    }
+    console.log(this.company.isBookmarked);
+    console.log(this.dataService.savedCompaniesSize);
     this.active = !this.active;
 
+
+
   }
- 
+
 }
