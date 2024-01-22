@@ -23,9 +23,16 @@ export class DataService {
   //   return this.http.get<any>(this.companyUrl);
   // }
 
-  // updateJsonData(newData: any): Observable<any> {
-  //   return this.http.put<any>(this.companyUrl, newData);
-  // }
+  async updateCompanyCounter(companyId: number, newData: Company): Promise<Company> {
+    const data = await fetch(this.companyUrl + companyId.toString(), {
+      method: 'PUT',
+      body: JSON.stringify(newData),
+      headers: { 'Content-Type': 'application/json' }
+    });
+
+    return data.json() ?? {};
+  }
+
 
   // Returns a JSON list of all companies 
   async getAllCompanies(): Promise<Company[]> {
