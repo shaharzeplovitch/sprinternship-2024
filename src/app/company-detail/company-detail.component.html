@@ -7,13 +7,13 @@
       <div class="company-name">{{specificCompany?.name}}</div>
       <div class="company-rating">{{specificCompany?.rating | number: '1.1'}}<i class="fa-solid fa-star fa-xs"></i>
       </div>
-      <div class="company-reviews">{{specificCompany?.companyReviews | number: '1.0' : 'en-US'}} company reviews</div>
+      <div class="company-reviews" (click)="onShowOverlay()">{{specificCompany?.companyReviews | number: '1.0' : 'en-US'}} company reviews</div>
       <div class="company-bio">Find out what people are saying about {{specificCompany?.name}}’s interviews</div>
       <input type="text" placeholder="    Positions or type" class="searchbar" />
       <i class="fa-solid fa-magnifying-glass search-icon"></i>
       <div class="scrollbar">
         <div class="job-container">
-          <app-job *ngFor="let job of companyJobs" [job]="job">
+          <app-job *ngFor="let job of companyJobs" [job]="job" (showOverlayEmitter)="onShowOverlay()">
           </app-job>
         </div>
       </div>
@@ -34,4 +34,7 @@
       <app-suggested-companies *ngFor="let company of companiesList" [company]="company"></app-suggested-companies>
     </div>
   </div>
+</div>
+<div *ngIf="showOverlay" class="experiences-overlay-container">
+  <app-experiences-overlay></app-experiences-overlay>
 </div>

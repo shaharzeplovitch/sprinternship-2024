@@ -10,12 +10,21 @@
   margin: 0 auto;
   grid-column-start: 2;
   grid-column-end: 6;
-
   /* Center the element horizontally */
 }
 
 .element {
   width: 100%;
+}
+
+.scrollbar {
+  width: 660px;
+  height: 450px;
+  flex-shrink: 0;
+  overflow: scroll;
+  overflow-x: hidden;
+  scrollbar-width: 10px;
+  scroll-behavior: auto;
 }
 
 .logo {
@@ -26,7 +35,6 @@
   margin-top: -106px;
   margin-left: 62px;
   font-family: Inter, var(--default-font-family);
-  
 }
 
 .img {
@@ -75,6 +83,7 @@
   left: 29px;
   transform: translate(-145px, 10px);
   text-align: right;
+  cursor: pointer;
 }
 
 .company-bio {
@@ -117,24 +126,16 @@
   left: 22px;
 }
 
-.scrollbar {
-  width: 660px;
-  height: 450px;
-  flex-shrink: 0;
-  overflow: scroll;
-  scrollbar-width: 10px;
-  scroll-behavior: auto;
-}
-
 .container-suggested {
   width: 393px;
-  height: 282px;
-  flex-shrink: 0;
+  flex-shrink: 0; 
   border-radius: 20px;
   border: 1px solid rgba(204, 204, 204, 0.80);
   background: #FFF;
   color: #CCCCCCCC;
   padding-bottom: 10px;
+  height: 282px;
+  flex-shrink: 0;
   grid-column-start: 5;
   grid-column-end: 6;
   grid-row-start: 12;
@@ -149,6 +150,12 @@
   line-height: normal;
   margin-left: 36px;
   margin-top: 30px;
+}
+
+.experiences-overlay-container{
+  position:absolute;
+  top: 52px;
+  right: 0;
 }
 
 .parent-container {
