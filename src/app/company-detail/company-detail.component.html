@@ -1,5 +1,5 @@
 <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
-<div class="parent-container">
+<div class="parent-container" *ngIf="specificCompany">
   <div class="company-background">
     <img class="element" [src]="specificCompany?.backgroundImageUrl" alt="Company Background Image" />
     <div class="logo">
