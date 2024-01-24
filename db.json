@@ -29,7 +29,7 @@
       "description": "Apple Inc., American manufacturer of personal computers, smartphones, tablet computers, computer peripherals, and computer software and one of the most recognizable brands in the world. ",
       "competitors": "Google, Samsung, HP",
       "founded": 1976,
-      "isBookmarked": false,
+      "isBookmarked": true,
       "companyReviews": 1655
     },
     {
@@ -45,7 +45,7 @@
       "description": "All Amazon teams and businesses, from Prime delivery to AWS, are guided by four key tenets: customer obsession rather than competitor focus, passion for invention, commitment to operational excellence, and long-term thinking. We are driven by the excitement of building technologies, inventing products, and providing services that transform the way our customers live their lives and run their businesses.",
       "competitors": "Google, Salesforce, Amazon Web Services",
       "founded": 1975,
-      "isBookmarked": true,
+      "isBookmarked": false,
       "companyReviews": 977
     },
     {
@@ -65,7 +65,7 @@
       "companyReviews": 1491
     },
     {
-      "id": 4.2,
+      "id": 4,
       "logoImageUrl": "assets/facebook.png",
       "backgroundImageUrl": "assets/background/meta_cover.jpeg",
       "companyDetailLogo": "assets/company-logos/meta_logo.jpeg",
@@ -77,7 +77,7 @@
       "description": "Meta builds technologies that help people connect, find communities, and grow businesses. When Facebook launched in 2004, it changed the way people connect. Apps like Messenger, Instagram and WhatsApp further empowered billions around the world. Now, Meta is moving beyond 2D screens toward immersive experiences like augmented and virtual reality to help build the next evolution in social technology.",
       "competitors": "Snap, Youtube, Twitter",
       "founded": 2004,
-      "isBookmarked": true,
+      "isBookmarked": false,
       "companyReviews": 2456
     }
   ],
